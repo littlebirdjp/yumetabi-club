@@ -1,0 +1,37 @@
+extends ./_parts/_layout
+
+//------------------
+//- meta
+//------------------
+block var_block
+
+//------------------
+//- header Css
+//------------------
+block headCSS
+
+//------------------s
+//- header js
+//------------------
+block headJS
+    script(src="#{rootPath}js/script.js")
+
+//- -----------------
+//- Contents
+//- -----------------
+block header_block
+
+block contents_block
+    .main
+        h1.main__title
+            img(src='#{rootPath}img/logo_teaser@2x.png', alt='yumetabi.club', width='441', height='54')
+        p.main__text
+            | 夢を追う人と、それを応援する人のためのプロジェクト。
+            br
+            | Coming Soon...
+
+block footer_block
+
+
+
+
