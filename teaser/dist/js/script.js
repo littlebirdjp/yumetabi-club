@@ -5,9 +5,6 @@ var wW = $(window).width();
 var mH = 500;
 var fH = $('#footer').height();
 
-console.log('wH =' + wH);
-console.log('fH =' + fH);
-
 if (wH < 500) {
 	$('#content').css('height',500 - fH);
 	} else {
