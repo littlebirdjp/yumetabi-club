@@ -17,36 +17,36 @@ block var_block
 
 doctype html
 html(lang="ja")
-head
-    meta(charset="utf-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1")
-    title #{title}
-    meta(name="description", content="#{description}")
-    meta(name="keywords", content="#{keywords}")
-    meta(name="og:url", content="#{og_url}")
-    meta(name="og:type", content="#{og_type}")
-    meta(name="og:title", content="#{og_title}")
-    meta(name="og:image", content="#{og_image}")
-    meta(name="og:description", content="#{og_description}")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        title #{title}
+        meta(name="description", content="#{description}")
+        meta(name="keywords", content="#{keywords}")
+        meta(name="og:url", content="#{og_url}")
+        meta(name="og:type", content="#{og_type}")
+        meta(name="og:title", content="#{og_title}")
+        meta(name="og:image", content="#{og_image}")
+        meta(name="og:description", content="#{og_description}")
 
-    block headCSS
-    link(rel="stylesheet", href="#{rootPath}css/style.css")
+        block headCSS
+        link(rel="stylesheet", href="#{rootPath}css/style.css")
 
-    script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
 
-    block headJS
+        block headJS
 
-body(class="#{bodyClass}")
+    body(class="#{bodyClass}")
 
-    .wrapper
+        .wrapper
 
-        block header_block
-        include _header
+            block header_block
+            include _header
 
-        .content#content
-            block contents_block
+            .content#content
+                block contents_block
 
-        block footer_block
-        include _footer
+            block footer_block
+            include _footer
 
 
