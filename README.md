@@ -1,5 +1,5 @@
 # yumetabi-club
-Project for Dreamers and his/her followers.
+Project for Dreamers and their followers.
 
 ## URL
 
