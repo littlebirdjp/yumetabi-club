@@ -10,7 +10,7 @@ $screen-lg: 1200px;
 
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #0A006C;
   @media (max-width: $screen-sm) {
     font-size: 14px;
@@ -61,19 +61,39 @@ header {
   }
   &__text {
     padding: 30px 0;
+    color: #FFF;
+    font-size: 120%;
+  }
+  &__text2 {
     line-height: 2;
   }
 }
 
-footer {
+.footer {
   background: #FFF;
-  color: #FF7D00;
+  text-align: center;
+  &__text {
+    font-size: 70%;
+    color: #666;
+    padding: 15px 10px 0;
+  }
 }
 
 .copyright {
-  padding: 20px 0;
-  text-align: center;
-  font-size: 90%;
+  padding: 15px 0;
+  font-size: 80%;
+  color: #FF7D00;
+  a {
+    color: #FF7D00;
+    text-decoration: none;
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      color: #FF7D00;
+      text-decoration: none;
+    }
+  }
 }
 
 
