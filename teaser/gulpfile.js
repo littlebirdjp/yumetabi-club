@@ -62,6 +62,9 @@ gulp.task('scss', function() {
     .on('error', function(err) {
       console.log(err.message);
     })
+    .pipe(autoprefixer({
+        browsers: ['last 2 versions']
+    }))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.css))
     .pipe(browserSync.reload({
