@@ -1,0 +1,40 @@
+:root {
+  font-size: 10px;
+}
+
+$textcolor: #000;
+
+body {
+  color: $textcolor;
+}
+
+.wrapper {
+  
+}
+
+.PageUnderConstruction {
+  background: color(#978bb7 lightness(80%));
+}
+
+.underConstruction {
+  padding: 150px 0;
+  &__title {
+    color: #FF7D00;
+    font-size: 3.6rem;
+    text-align: center;
+  }
+}
+
+footer {
+  margin: 0 0 30px 0;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+@import "layout_parts/_cat1";
+
+
+
