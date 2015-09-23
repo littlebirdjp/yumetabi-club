@@ -10,7 +10,7 @@
 - var og_image          = '';//-og image
 - var og_description    = '';//-og description
 - var bodyClass         = '';//-body class
-- var rootPath          = '/'//-root path
+- var rootPath          = './'//-root path
 
 //- override default variables
 block var_block
@@ -51,6 +51,8 @@ html(lang="ja")
         block headCSS
         link(rel="stylesheet", href="#{rootPath}css/style.css")
 
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+
         block headJS
 
     body(class="#{bodyClass}")
@@ -59,7 +61,7 @@ html(lang="ja")
 
             block header_block
 
-            .contents
+            .content#content
                 block contents_block
 
             block footer_block
