@@ -1,7 +1,8 @@
 {
   "name": "yumetabi.club",
   "version": "0.0.1",
-  "description": "",
+  "description": "Project for Dreamers and their followers.",
+  "author": "Yusuke Takahashi <youthkee@gmail.com>",
   "scripts": {
     "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
