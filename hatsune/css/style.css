@@ -51,6 +51,29 @@ table {
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   color: #000;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}
+
+a {
+  color: #FD3A3A;
+  text-decoration: none;
+}
+
+a:link,
+  a:visited {
+  color: #FD3A3A;
+  text-decoration: none;
+}
+
+a:hover,
+  a:active {
+  color: #FD3A3A;
+  text-decoration: underline;
 }
 
 .wrapper {
@@ -58,7 +81,8 @@ body {
 }
 
 .PageUnderConstruction {
-  background: rgb(199, 192, 216);
+  background: rgb(237, 120, 144);
+  color: #fff;
 }
 
 .PageUnderConstruction .content {
@@ -73,10 +97,114 @@ body {
 }
 
 .underConstruction__title {
-  color: #FF7D00;
   font-size: 36px;
   font-size: 3.6rem;
   text-align: center;
+}
+
+.PageBirthday2015 {
+  background: linear-gradient(-180deg, #E42065 0%, rgba(200,109,215,0.01) 30%);
+  background-repeat: repeat-x;
+}
+
+.birthday2015 {
+  background-image: url(../birthday2015/img/stars@2x.png);
+  background-repeat: repeat-x;
+  background-size: 209px 152px;
+}
+
+.birthday2015__content {
+  width: 690px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+
+  .birthday2015__content {
+    width: initial;
+    padding: 0 20px;
+  }
+}
+
+.birthday2015__title {
+  font-family: 'Original Surfer', cursive;
+  font-size: 64px;
+  font-size: 6.4rem;
+  color: #FD3A3A;
+  text-align: center;
+  padding-top: 160px;
+}
+
+@media (max-width: 768px) {
+
+  .birthday2015__title {
+    font-size: 5.6rem;
+    line-height: 1.2;
+  }
+}
+
+.birthday2015__title2 {
+  font-size: 18px;
+  font-size: 1.8rem;
+  color: #FF6E00;
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+
+  .birthday2015__title2 {
+    font-size: 1.4rem;
+  }
+}
+
+.birthday2015__text {
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin: 40px auto;
+}
+
+@media (max-width: 768px) {
+
+  .birthday2015__text {
+    font-size: 1.2rem;
+  }
+}
+
+.birthday2015__text2 {
+  font-size: 12px;
+  font-size: 1.2rem;
+  margin: 40px auto;
+}
+
+.birthday2015__button {
+  text-align: center;
+}
+
+.birthday2015__button a {
+  display: inline-block;
+  text-align: center;
+  color: #FFF;
+  font-size: 24px;
+  font-size: 2.4rem;
+  background: #FFAB16;
+  border-radius: 11px;
+  padding: 15px 80px;
+}
+
+@media (max-width: 480px) {
+
+  .birthday2015__button a {
+    font-size: 1.8rem;
+    padding: 10px 0;
+    width: 100%;
+  }
+}
+
+.birthday2015__button a:hover,
+      .birthday2015__button a:active {
+  text-decoration: none;
+  background: rgb(255, 199, 102);
 }
 
 .footer {
@@ -90,11 +218,15 @@ body {
   font-size: 1.2rem;
 }
 
-/* cat1
----------------------------------------------- */
-.cat1 {
-  color: #f00;
+.mobile_display_inline {
+  display: none;
 }
 
+@media (max-width: 768px) {
+
+  .mobile_display_inline {
+    display: inline;
+  }
+}
 
 
