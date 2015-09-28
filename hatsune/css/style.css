@@ -60,19 +60,19 @@ body {
 }
 
 a {
-  color: #FD3A3A;
+  color: #39BCD4;
   text-decoration: none;
 }
 
 a:link,
   a:visited {
-  color: #FD3A3A;
+  color: #39BCD4;
   text-decoration: none;
 }
 
 a:hover,
   a:active {
-  color: #FD3A3A;
+  color: #39BCD4;
   text-decoration: underline;
 }
 
@@ -103,7 +103,7 @@ a:hover,
 }
 
 .PageBirthday2015 {
-  background: linear-gradient(-180deg, #E42065 0%, rgba(200,109,215,0.01) 30%);
+  background: linear-gradient(-180deg, rgb(235, 96, 145) 0%, rgba(200,109,215,0.01) 30%);
   background-repeat: repeat-x;
 }
 
@@ -114,7 +114,7 @@ a:hover,
 }
 
 .birthday2015__content {
-  width: 690px;
+  width: 768px;
   margin: 0 auto;
 }
 
@@ -128,8 +128,8 @@ a:hover,
 
 .birthday2015__title {
   font-family: 'Original Surfer', cursive;
-  font-size: 64px;
-  font-size: 6.4rem;
+  font-size: 56px;
+  font-size: 5.6rem;
   color: #FD3A3A;
   text-align: center;
   padding-top: 160px;
@@ -138,23 +138,37 @@ a:hover,
 @media (max-width: 768px) {
 
   .birthday2015__title {
-    font-size: 5.6rem;
-    line-height: 1.2;
+    font-size: 4.8rem;
+    line-height: 1.1;
   }
 }
 
 .birthday2015__title2 {
-  font-size: 18px;
-  font-size: 1.8rem;
-  color: #FF6E00;
+  font-size: 16px;
+  font-size: 1.6rem;
+  color: #666;
   text-align: center;
-  margin-top: 40px;
 }
 
 @media (max-width: 768px) {
 
   .birthday2015__title2 {
     font-size: 1.4rem;
+    margin-top: 20px;
+  }
+}
+
+.birthday2015__title3 {
+  font-size: 20px;
+  font-size: 2rem;
+  color: #FF6E00;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+
+  .birthday2015__title3 {
+    font-size: 1.8rem;
   }
 }
 
@@ -188,23 +202,48 @@ a:hover,
   font-size: 24px;
   font-size: 2.4rem;
   background: #FFAB16;
-  border-radius: 11px;
+  border-radius: 9px;
   padding: 15px 80px;
 }
 
-@media (max-width: 480px) {
+.birthday2015__button a:hover {
+  text-decoration: none;
+  background: rgb(255, 199, 102);
+}
+
+@media (max-width: 768px) {
 
   .birthday2015__button a {
     font-size: 1.8rem;
     padding: 10px 0;
     width: 100%;
   }
+
+  .birthday2015__button a:hover {
+    text-decoration: none;
+    background: #FFAB16;
+  }
 }
 
-.birthday2015__button a:hover,
-      .birthday2015__button a:active {
-  text-decoration: none;
-  background: rgb(255, 199, 102);
+.socialButton {
+  text-align: center;
+  margin: 20px auto 40px;
+}
+
+.socialButton #twitter-widget-0 {
+  vertical-align: bottom;
+}
+
+.socialButton .fb_iframe_widget {
+  vertical-align: baseline;
+}
+
+.socialButton__line {
+  display: inline;
+}
+
+.socialButton__line img {
+  vertical-align: bottom;
 }
 
 .footer {

@@ -18,16 +18,16 @@ body {
 }
 
 a {
-  color: #FD3A3A;
+  color: #39BCD4;
   text-decoration: none;
   &:link,
   &:visited {
-    color: #FD3A3A;
+    color: #39BCD4;
     text-decoration: none;
   }
   &:hover,
   &:active {
-    color: #FD3A3A;
+    color: #39BCD4;
     text-decoration: underline;
   }
 }
@@ -56,7 +56,7 @@ a {
 }
 
 .PageBirthday2015 {
-  background: linear-gradient(-180deg, #E42065 0%, rgba(200,109,215,0.01) 30%);
+  background: linear-gradient(-180deg, color(#E42065 lightness(65%)) 0%, rgba(200,109,215,0.01) 30%);
   background-repeat: repeat-x;
 }
 
@@ -65,7 +65,7 @@ a {
   background-repeat: repeat-x;
   background-size: 209px 152px;
   &__content {
-    width: 690px;
+    width: 768px;
     margin: 0 auto;
     @media (max-width: $screen-sm) {
       width: initial;
@@ -74,22 +74,30 @@ a {
   }
   &__title {
     font-family: 'Original Surfer', cursive;
-    font-size: 6.4rem;
+    font-size: 5.6rem;
     color: #FD3A3A;
     text-align: center;
     padding-top: 160px;
     @media (max-width: $screen-sm) {
-      font-size: 5.6rem;
-      line-height: 1.2;
+      font-size: 4.8rem;
+      line-height: 1.1;
     }
   }
   &__title2 {
-    font-size: 1.8rem;
-    color: #FF6E00;
+    font-size: 1.6rem;
+    color: #666;
     text-align: center;
-    margin-top: 40px;
     @media (max-width: $screen-sm) {
       font-size: 1.4rem;
+      margin-top: 20px;
+    }
+  }
+  &__title3 {
+    font-size: 2rem;
+    color: #FF6E00;
+    text-align: center;
+    @media (max-width: $screen-sm) {
+      font-size: 1.8rem;
     }
   }
   &__text {
@@ -111,18 +119,38 @@ a {
       color: #FFF;
       font-size: 2.4rem;
       background: #FFAB16;
-      border-radius: 11px;
+      border-radius: 9px;
       padding: 15px 80px;
-      @media (max-width: $screen-xs) {
-        font-size: 1.8rem;
-        padding: 10px 0;
-        width: 100%;
-      }
-      &:hover,
-      &:active {
+      &:hover {
         text-decoration: none;
         background: color(#FFAB16 lightness(70%));
       }
+      @media (max-width: $screen-sm) {
+        font-size: 1.8rem;
+        padding: 10px 0;
+        width: 100%;
+        &:hover {
+          text-decoration: none;
+          background: #FFAB16;
+        }
+      }
+    }
+  }
+}
+
+.socialButton {
+  text-align: center;
+  margin: 20px auto 40px;
+  #twitter-widget-0 {
+    vertical-align: bottom;
+  }
+  .fb_iframe_widget {
+    vertical-align: baseline;
+  }
+  &__line {
+    display: inline;
+    img {
+      vertical-align: bottom;
     }
   }
 }

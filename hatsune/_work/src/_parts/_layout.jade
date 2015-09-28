@@ -9,6 +9,13 @@
 - var og_title          = '';//-og title
 - var og_image          = '';//-og image
 - var og_description    = '';//-og description
+- var tw_type           = '';//-twitter card type
+- var tw_site           = '';
+- var tw_url            = '';
+- var tw_title          = '';
+- var tw_description    = '';
+- var tw_image          = '';
+- var tw_domain         = 'yumetabi.club';
 - var bodyClass         = '';//-body class
 - var rootPath          = './'//-root path
 
@@ -28,6 +35,13 @@ html(lang="ja")
         meta(name="og:title", content="#{og_title}")
         meta(name="og:image", content="#{og_image}")
         meta(name="og:description", content="#{og_description}")
+        meta(name="twitter:card", content="#{tw_type}")
+        meta(name="twitter:site", content="#{tw_site}")
+        meta(name="twitter:url", content="#{tw_url}")
+        meta(name="twitter:title", content="#{tw_title}")
+        meta(name="twitter:description", content="#{tw_description}")
+        meta(name="twitter:image", content="#{tw_image}")
+        meta(name="twitter:domain", content="#{tw_domain}")
 
         link(rel="apple-touch-icon", sizes="57x57", href="/apple-touch-icon-57x57.png")
         link(rel="apple-touch-icon", sizes="60x60", href="/apple-touch-icon-60x60.png")
@@ -58,13 +72,23 @@ html(lang="ja")
 
     body(class="#{bodyClass}")
 
-        .wrapper
+    #fb-root
+    script.
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
 
-            block header_block
+    .wrapper
 
-            .content#content
-                block contents_block
+        block header_block
 
-            block footer_block
+        .content#content
+            block contents_block
+
+        block footer_block
 
 
