@@ -211,7 +211,7 @@ a:hover,
   background: rgb(255, 199, 102);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
 
   .birthday2015__button a {
     font-size: 1.8rem;
