@@ -51,8 +51,8 @@ gulp.task('prettify', ['html'], function() {
 
 gulp.task("css", function() {
   return gulp.src([
-    paths.src + 'css/*.css',
-    '!' + paths.src + 'css/_*.css'
+    paths.src + '**/*.css',
+    '!' + paths.src + '**/_*.css'
     ])
     .pipe(cssnext({
         browsers: 'last 2 versions',
@@ -69,7 +69,7 @@ gulp.task("css", function() {
           require("postcss-nested")
         ]
     }))
-    .pipe(gulp.dest(paths.dist + 'css/'))
+    .pipe(gulp.dest(paths.dist))
     .pipe(browserSync.reload({
       stream: true
     }));
@@ -83,7 +83,7 @@ gulp.task('concat', ['css'],function() {
 
 gulp.task('watch', function() {
   gulp.watch([paths.src + '**/*.jade'], ['prettify']);
-  gulp.watch([paths.src + 'css/*.css'], ['concat']);
+  gulp.watch([paths.src + '**/*.css'], ['css']);
 });
 
-gulp.task('default', ['bs', 'prettify', 'concat', 'watch']);
+gulp.task('default', ['bs', 'prettify', 'css', 'watch']);

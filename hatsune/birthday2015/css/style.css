@@ -1,0 +1,192 @@
+:root {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  color: #000;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}
+
+a {
+  color: #39BCD4;
+  text-decoration: none;
+}
+
+a:link,
+  a:visited {
+  color: #39BCD4;
+  text-decoration: none;
+}
+
+a:hover,
+  a:active {
+  color: #39BCD4;
+  text-decoration: underline;
+}
+
+.wrapper {
+  
+}
+
+.PageBirthday2015 {
+  background: linear-gradient(-180deg, rgb(235, 96, 145) 0%, rgba(200,109,215,0.01) 30%);
+  background-repeat: repeat-x;
+}
+
+.birthday2015 {
+  background-image: url(../img/stars@2x.png);
+  background-repeat: repeat-x;
+  background-size: 209px 152px;
+}
+
+.birthday2015__content {
+  width: 768px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+
+  .birthday2015__content {
+    width: initial;
+    padding: 0 20px;
+  }
+}
+
+.birthday2015__title {
+  font-family: 'Original Surfer', cursive;
+  font-size: 56px;
+  font-size: 5.6rem;
+  color: #FD3A3A;
+  text-align: center;
+  padding-top: 160px;
+}
+
+@media (max-width: 768px) {
+
+  .birthday2015__title {
+    font-size: 4.8rem;
+    line-height: 1.1;
+  }
+}
+
+.birthday2015__title2 {
+  font-size: 16px;
+  font-size: 1.6rem;
+  color: #666;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+
+  .birthday2015__title2 {
+    font-size: 1.4rem;
+    margin-top: 20px;
+  }
+}
+
+.birthday2015__title3 {
+  font-size: 20px;
+  font-size: 2rem;
+  color: #FF6E00;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+
+  .birthday2015__title3 {
+    font-size: 1.8rem;
+  }
+}
+
+.birthday2015__text {
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin: 40px auto;
+}
+
+@media (max-width: 768px) {
+
+  .birthday2015__text {
+    font-size: 1.2rem;
+  }
+}
+
+.birthday2015__text2 {
+  font-size: 12px;
+  font-size: 1.2rem;
+  margin: 40px auto;
+}
+
+.birthday2015__button {
+  text-align: center;
+}
+
+.birthday2015__button a {
+  display: inline-block;
+  text-align: center;
+  color: #FFF;
+  font-size: 24px;
+  font-size: 2.4rem;
+  background: #FFAB16;
+  border-radius: 9px;
+  padding: 15px 80px;
+}
+
+.birthday2015__button a:hover {
+  text-decoration: none;
+  background: rgb(255, 199, 102);
+}
+
+@media (max-width: 480px) {
+
+  .birthday2015__button a {
+    font-size: 1.8rem;
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  .birthday2015__button a:hover {
+    text-decoration: none;
+    background: #FFAB16;
+  }
+}
+
+.socialButton {
+  text-align: center;
+  margin: 20px auto 40px;
+}
+
+.socialButton #twitter-widget-0 {
+  vertical-align: bottom;
+}
+
+.socialButton .fb_iframe_widget {
+  vertical-align: baseline;
+}
+
+.socialButton__line {
+  display: inline;
+}
+
+.socialButton__line img {
+  vertical-align: bottom;
+}
+
+.mobile_display_inline {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  .mobile_display_inline {
+    display: inline;
+  }
+}
+
+
