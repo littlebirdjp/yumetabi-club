@@ -35,7 +35,7 @@ a:hover,
 }
 
 .PageBirthday2015 {
-  background: linear-gradient(-180deg, rgb(235, 96, 145) 0%, rgba(200,109,215,0.01) 30%);
+  background: linear-gradient(-180deg, rgb(235, 96, 145) 0%, rgba(200,109,215,0.01) 10%);
   background-repeat: repeat-x;
 }
 
@@ -104,6 +104,10 @@ a:hover,
   }
 }
 
+.birthday2015__title4 {
+  color: #FD3A3A;
+}
+
 .birthday2015__text {
   font-size: 14px;
   font-size: 1.4rem;
@@ -152,6 +156,40 @@ a:hover,
   }
 
   .birthday2015__button a:hover {
+    text-decoration: none;
+    background: #FFAB16;
+  }
+}
+
+.birthday2015__button2 {
+  text-align: center;
+}
+
+.birthday2015__button2 a {
+  display: inline-block;
+  text-align: center;
+  color: #FFF;
+  font-size: 18px;
+  font-size: 1.8rem;
+  background: #FFAB16;
+  border-radius: 9px;
+  padding: 10px 60px;
+}
+
+.birthday2015__button2 a:hover {
+  text-decoration: none;
+  background: rgb(255, 199, 102);
+}
+
+@media (max-width: 480px) {
+
+  .birthday2015__button2 a {
+    font-size: 1.2rem;
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  .birthday2015__button2 a:hover {
     text-decoration: none;
     background: #FFAB16;
   }
