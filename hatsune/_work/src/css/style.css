@@ -9,7 +9,7 @@ $screen-sm: 768px;
 $screen-md: 992px;
 $screen-lg: 1200px;
 
-$textcolor: #000;
+$textcolor: #fff;
 
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
@@ -17,6 +17,7 @@ body {
   font-size: 1.2rem;
   line-height: 1.6;
   text-size-adjust: 100%;
+  background: color(#E43859 lightness(70%));
 }
 
 a {
@@ -34,18 +35,10 @@ a {
   }
 }
 
-.wrapper {
-  
-}
-
-.PageUnderConstruction {
-  background: color(#E43859 lightness(70%));
-  color: #fff;
-  .content {
-    display: table;
-    width: 100%;
-    height: 650px;
-  }
+.content {
+  display: table;
+  width: 100%;
+  height: 650px;
 }
 
 .underConstruction {
@@ -55,10 +48,6 @@ a {
     font-size: 3.6rem;
     text-align: center;
   }
-}
-
-.footer {
-  
 }
 
 .copyright {

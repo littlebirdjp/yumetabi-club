@@ -50,12 +50,13 @@ table {
 
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-  color: #000;
+  color: #fff;
   font-size: 1.2rem;
   line-height: 1.6;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
+  background: rgb(237, 120, 144);
 }
 
 a {
@@ -75,19 +76,10 @@ a:hover,
 	text-decoration: underline;
 }
 
-.wrapper {
-  
-}
-
-.PageUnderConstruction {
-  background: rgb(237, 120, 144);
-  color: #fff;
-}
-
-.PageUnderConstruction .content {
-	display: table;
-	width: 100%;
-	height: 650px;
+.content {
+  display: table;
+  width: 100%;
+  height: 650px;
 }
 
 .underConstruction {
@@ -98,10 +90,6 @@ a:hover,
 .underConstruction__title {
 	font-size: 3.6rem;
 	text-align: center;
-}
-
-.footer {
-  
 }
 
 .copyright {
