@@ -57,9 +57,7 @@ gulp.task("css", function() {
     .pipe(cssnext({
         browsers: 'last 2 versions',
         features:{
-          rem:{
-            atrules: true
-          }
+          rem: false
         },
         compress: false,
         import: true,
