@@ -111,7 +111,7 @@ a:hover,
   margin: 20px auto 40px;
 }
 
-.socialButton #twitter-widget-1 {
+.socialButton > iframe {
   vertical-align: bottom;
 }
 
@@ -139,6 +139,14 @@ a:hover,
   }
 }
 
+.sub__text2 {
+  font-size: 0.75rem;
+}
+
+.sub__label {
+  vertical-align: text-bottom;
+}
+
 .tweet__inner {
   overflow: hidden;
 }
@@ -160,7 +168,8 @@ a:hover,
   font-size: 1.1rem;
 }
 
-.btn__entry a:hover {
+.btn__entry a:hover,
+      .btn__entry a:active {
   background: rgb(255, 199, 102);
 }
 
