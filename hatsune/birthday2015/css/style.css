@@ -139,6 +139,14 @@ a:hover,
   }
 }
 
+.tweet__inner {
+  overflow: hidden;
+}
+
+.account__name {
+  font-size: 1.0rem;
+}
+
 .btn__entry {
   text-align: center;
 }
@@ -204,4 +212,6 @@ a:hover,
   color: #666;
   font-size: 0.75rem;
 }
+
+
 
