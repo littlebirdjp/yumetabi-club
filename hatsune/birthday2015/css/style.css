@@ -128,14 +128,27 @@ a:hover,
 }
 
 .sub__title {
-  font-size: 1.25rem;
+  background-image : url(../img/title_bg@2x.png);
+  background-size: 4px 43px;
+  background-repeat: repeat-x;
+}
+
+.sub__title h2 {
+  background-image : url(../img/stars2@2x.png);
+  background-size: 41px 27px;
+  background-position: 6px 5px;
+  background-repeat: no-repeat;
+  font-size: 1.063rem;
+  padding-left: 3.2rem;
+  margin-bottom: 0;
   color: #FD3A3A;
+  line-height: 42px;
 }
 
 @media (max-width: 768px) {
 
-  .sub__title {
-    font-size: 1.125rem;
+  .sub__title h2 {
+    font-size: .9rem;
   }
 }
 

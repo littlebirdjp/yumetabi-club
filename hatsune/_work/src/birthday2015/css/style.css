@@ -102,10 +102,22 @@ a {
 
 .sub {
   &__title {
-    font-size: 1.25rem;
-    color: #FD3A3A;
-    @media (max-width: $screen-sm) {
-      font-size: 1.125rem;
+    background-image : url(../img/title_bg@2x.png);
+    background-size: 4px 43px;
+    background-repeat: repeat-x;
+    h2 {
+      background-image : url(../img/stars2@2x.png);
+      background-size: 41px 27px;
+      background-position: 6px 5px;
+      background-repeat: no-repeat;
+      font-size: 1.063rem;
+      padding-left: 3.2rem;
+      margin-bottom: 0;
+      color: #FD3A3A;
+      line-height: 42px;
+      @media (max-width: $screen-sm) {
+        font-size: .9rem;
+      }
     }
   }
   &__text2 {
