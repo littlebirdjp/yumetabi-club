@@ -118,7 +118,7 @@ a {
       margin-bottom: 0;
       color: #FD3A3A;
       line-height: 42px;
-      @media (max-width: $screen-sm) {
+      @media (max-width: $screen-md) {
         font-size: .9rem;
       }
     }

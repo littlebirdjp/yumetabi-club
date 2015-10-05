@@ -147,7 +147,7 @@ a:hover,
   line-height: 42px;
 }
 
-@media (max-width: 34em) {
+@media (max-width: 48em) {
 
   .sub__title h2{
     font-size: .9rem;
