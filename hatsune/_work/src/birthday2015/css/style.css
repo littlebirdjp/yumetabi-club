@@ -99,6 +99,9 @@ a {
     display: inline;
     img {
       vertical-align: bottom;
+      @media (max-width: $screen-sm) {
+        margin-top: 10px;
+      }
     }
   }
 }
@@ -140,6 +143,18 @@ a {
 .account {
   &__name {
     font-size: 1.0rem;
+  }
+}
+
+.news {
+  &__list {
+    padding-left: 1rem;
+    li {
+      margin-bottom: .5rem;
+    }
+  }
+  &__title {
+    color: #FF6E00;
   }
 }
 
