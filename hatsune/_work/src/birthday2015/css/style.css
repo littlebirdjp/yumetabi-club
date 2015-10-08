@@ -90,15 +90,16 @@ a {
   text-align: center;
   margin: 20px auto 40px;
   & > iframe {
-    vertical-align: bottom;
+    
   }
   .fb_iframe_widget {
     vertical-align: baseline;
+    display: inline;
   }
   &__line {
     display: inline;
     img {
-      vertical-align: bottom;
+      vertical-align: baseline;
       @media (max-width: $screen-sm) {
         margin-top: 10px;
       }
