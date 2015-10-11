@@ -113,7 +113,9 @@ a:hover,
   margin: 20px auto 40px;
 }
 
-.socialButton > iframe {}
+.socialButton > iframe {
+  vertical-align: bottom;
+}
 
 .socialButton .fb_iframe_widget {
   vertical-align: baseline;
@@ -122,10 +124,6 @@ a:hover,
 
 .socialButton__line {
   display: inline;
-}
-
-.socialButton__line img {
-  vertical-align: baseline;
 }
 
 @media (max-width: 34em) {
