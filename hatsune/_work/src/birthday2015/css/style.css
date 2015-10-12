@@ -73,6 +73,16 @@ a {
       }
     }
   }
+  &__title3 {
+    color: #f00;
+    font-size: 1.0rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    @media (max-width: $screen-sm) {
+      font-size: 0.750rem;
+    }
+  }
   &__text {
     font-size: 0.875rem;
     margin: 40px auto;

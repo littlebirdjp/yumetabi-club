@@ -91,6 +91,21 @@ a:hover,
   }
 }
 
+.main__title3 {
+  color: #f00;
+  font-size: 1.0rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 34em) {
+
+  .main__title3{
+    font-size: 0.750rem;
+  }
+}
+
 .main__text {
   font-size: 0.875rem;
   margin: 40px auto;
