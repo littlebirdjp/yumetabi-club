@@ -10,7 +10,7 @@ block var_block
     - var og_url            = 'http://hatsune.yumetabi.club/birthday2016/';//-og url
     - var og_type           = 'website';//-og type
     - var og_title          = title;//-og title
-    - var og_image          = 'http://hatsune.yumetabi.club/birthday2016/img/ogimage.png';//-og image
+    - var og_image          = 'http://hatsune.yumetabi.club/birthday2016/img/ogimage.png?20150928';//-og image
     - var og_description    = description;//-og description
     - var tw_type           = 'summary_large_image';//-twitter card type
     - var tw_site           = '@hatsune_movie';
@@ -24,7 +24,7 @@ block var_block
 //- header meta
 //------------------
 block headMETA
-    link(href="https://fonts.googleapis.com/css?family=Original+Surfer", rel="stylesheet", type="text/css")
+    link(href="https://fonts.googleapis.com/css?family=Titan+One", rel="stylesheet", type="text/css")
 
 //------------------
 //- header css
@@ -61,7 +61,9 @@ block contents_block
                         span
                             | 初音ファン一同による
                         br
-                        | 初音さんバースデー＆50回記念企画
+                        | 初音さんバースデー＆
+                        br.hidden-sm-up
+                        | 初音茶屋50回記念企画
                     //- p.main__title3
                     //-     | バースデーサプライズは無事終了しました。
                     //-     br
@@ -264,7 +266,7 @@ block contents_block
                                     | 初音茶屋について
                         .card-block
                             p.card-text
-                                | 初音さんが2010年から開催していて、通算50回目を越える恒例のワンマンライブ。
+                                | 初音さんが2010年から開催していて、通算50回目を迎える恒例のワンマンライブ。
                                 br
                                 | おなじみの楽曲はもちろん、みんなが知ってるカバー曲や、子供の頃から作り続けている曲を披露するコーナーなど、初めて来た人でも楽しめる仕掛けが満載。初音さんがチーム・初音のメンバーと繰り広げる、独特の『ゆるゆるトーク』にも癒やされること請け合いです。
                             p.text-xs-right

@@ -49,7 +49,7 @@ a:active {
 }
 
 .main__title {
-  font-family: 'Original Surfer', cursive;
+  font-family: 'Titan One', cursive;
   font-size: 3.5rem;
   color: #2C86FF;
   text-align: center;
@@ -58,7 +58,7 @@ a:active {
 
 @media (max-width: 34em) {
   .main__title {
-    font-size: 3.0rem;
+    font-size: 2.5rem;
     line-height: 1.1;
   }
 }
