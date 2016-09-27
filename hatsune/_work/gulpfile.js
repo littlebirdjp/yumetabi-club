@@ -1,6 +1,5 @@
 var gulp = require('gulp');
 var jade = require('gulp-jade');
-var cssnext = require('gulp-cssnext');
 var prettify = require('gulp-prettify');
 var rename = require('gulp-rename');
 var minify = require('gulp-csso');
@@ -8,6 +7,13 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var shell = require('gulp-shell');
 var browserSync = require('browser-sync');
+var postcss = require('gulp-postcss');
+var cssnext = require('postcss-cssnext');
+var PostcssSimpleVars = require('postcss-simple-vars');
+var PostcssNested = require('postcss-nested');
+var PostcssMixins = require('postcss-mixins');
+var PostcssImport = require('postcss-import');
+var csscomb = require('gulp-csscomb');
 
 var paths = {
   'src': 'src/',
@@ -49,24 +55,20 @@ gulp.task('prettify', ['html'], function() {
     }));
 });
 
-gulp.task("css", function() {
+gulp.task('css', function() {
+  var processors = [
+      cssnext({browsers: ['last 2 version']}),
+      PostcssMixins(),
+      PostcssSimpleVars(),
+      PostcssNested(),
+      PostcssImport(),
+  ];
   return gulp.src([
     paths.src + '**/*.css',
     '!' + paths.src + '**/_*.css'
     ])
-    .pipe(cssnext({
-        browsers: 'last 2 versions',
-        features:{
-          rem: false
-        },
-        compress: false,
-        import: true,
-        plugins: [
-          require("postcss-mixins"),
-          require("postcss-simple-vars"),
-          require("postcss-nested")
-        ]
-    }))
+    .pipe(postcss(processors))
+    .pipe(csscomb())
     .pipe(gulp.dest(paths.dist))
     .pipe(browserSync.reload({
       stream: true

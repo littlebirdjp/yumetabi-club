@@ -14,8 +14,7 @@ body {
 }
 
 @media (max-width: 34em) {
-
-  body{
+  body {
     font-size: 0.75rem;
   }
 }
@@ -26,13 +25,13 @@ a {
 }
 
 a:link,
-  a:visited {
+a:visited {
   color: #39BCD4;
   text-decoration: none;
 }
 
 a:hover,
-  a:active {
+a:active {
   color: rgb(37, 148, 167);
   text-decoration: none;
 }
@@ -57,8 +56,7 @@ a:hover,
 }
 
 @media (max-width: 34em) {
-
-  .main__title{
+  .main__title {
     font-size: 3.0rem;
     line-height: 1.1;
   }
@@ -71,22 +69,20 @@ a:hover,
   text-align: center;
 }
 
-@media (max-width: 34em) {
-
-  .main__title2{
-    font-size: 1.125rem;
-    margin-top: 20px;
-  }
-}
-
 .main__title2 span {
   font-size: 1.0rem;
   color: #666;
 }
 
 @media (max-width: 34em) {
+  .main__title2 {
+    font-size: 1.125rem;
+    margin-top: 20px;
+  }
+}
 
-  .main__title2 span{
+@media (max-width: 34em) {
+  .main__title2 span {
     font-size: 0.875rem;
   }
 }
@@ -100,8 +96,7 @@ a:hover,
 }
 
 @media (max-width: 34em) {
-
-  .main__title3{
+  .main__title3 {
     font-size: 0.750rem;
   }
 }
@@ -112,8 +107,7 @@ a:hover,
 }
 
 @media (max-width: 34em) {
-
-  .main__text{
+  .main__text {
     font-size: 0.75rem;
   }
 }
@@ -128,34 +122,37 @@ a:hover,
   margin: 20px auto 40px;
 }
 
-.socialButton > iframe {
-  vertical-align: bottom;
-}
-
 .socialButton .fb_iframe_widget {
   vertical-align: baseline;
   display: inline;
+}
+
+.socialButton > iframe {
+  vertical-align: bottom;
 }
 
 .socialButton__line {
   display: inline;
 }
 
-@media (max-width: 34em) {
 
-  .socialButton__line img{
+
+@media (max-width: 34em) {
+  .socialButton__line img {
     margin-top: 10px;
   }
 }
 
+
+
 .sub__title {
-  background-image : url(../img/title_bg@2x.png);
+  background-image: url(../img/title_bg@2x.png);
   background-size: 4px 43px;
   background-repeat: repeat-x;
 }
 
 .sub__title h2 {
-  background-image : url(../img/stars2@2x.png);
+  background-image: url(../img/stars2@2x.png);
   background-size: 41px 27px;
   background-position: 6px 5px;
   background-repeat: no-repeat;
@@ -167,8 +164,7 @@ a:hover,
 }
 
 @media (max-width: 48em) {
-
-  .sub__title h2{
+  .sub__title h2 {
     font-size: .9rem;
   }
 }
@@ -181,13 +177,19 @@ a:hover,
   vertical-align: text-bottom;
 }
 
+
+
 .tweet__inner {
   overflow: hidden;
 }
 
+
+
 .account__name {
   font-size: 1.0rem;
 }
+
+
 
 .news__list {
   padding-left: 1rem;
@@ -200,6 +202,8 @@ a:hover,
 .news__title {
   color: #FF6E00;
 }
+
+
 
 .btn__entry {
   text-align: center;
@@ -215,13 +219,12 @@ a:hover,
 }
 
 .btn__entry a:hover,
-      .btn__entry a:active {
+.btn__entry a:active {
   background: rgb(255, 199, 102);
 }
 
 @media (min-width: 34em) {
-
-  .btn__entry a{
+  .btn__entry a {
     font-size: 1.5rem;
     padding: .5rem 5rem;
   }
@@ -244,8 +247,7 @@ a:hover,
 }
 
 @media (max-width: 34em) {
-
-  .btn__tweet a{
+  .btn__tweet a {
     font-size: .7rem;
     padding: .375rem .6rem;
   }

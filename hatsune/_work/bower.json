@@ -1,0 +1,34 @@
+{
+  "name": "hatsune.yumetabi.club",
+  "version": "0.2.0",
+  "description": "Project for Dreamers and their followers.",
+  "authors": [
+    "Yusuke Takahashi <youthkee@gmail.com>"
+  ],
+  "homepage": "http://yumetabi.club",
+  "license": "MIT",
+  "main": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.4",
+    "tether": "~1.2.0"
+  },
+  "preen": {
+    "bootstrap": [
+      "dist/css/*.min.css",
+      "dist/js/*.min.js"
+    ],
+    "jquery": [
+      "dist/jquery.min.js"
+    ],
+    "tether": [
+      "dist/js/tether.min.js"
+    ]
+  }
+}
