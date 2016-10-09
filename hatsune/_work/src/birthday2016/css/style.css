@@ -43,8 +43,8 @@ a {
   &__inner {
     background-image: url(../img/fox@2x.png);
     background-repeat: repeat-x;
-    background-size: 158px 130px;
-    background-position: 0px 10px;
+    background-size: 165px 136px;
+    background-position: 5px 10px;
   }
   &__title {
     font-family: 'Titan One', cursive;
@@ -141,7 +141,8 @@ a {
     font-size: 0.75rem;
   }
   &__label {
-
+    vertical-align: text-bottom;
+    margin-left: .25rem;
   }
 }
 

@@ -44,8 +44,8 @@ a:active {
 .main__inner {
   background-image: url(../img/fox@2x.png);
   background-repeat: repeat-x;
-  background-size: 158px 130px;
-  background-position: 0px 10px;
+  background-size: 165px 136px;
+  background-position: 5px 10px;
 }
 
 .main__title {
@@ -174,7 +174,10 @@ a:active {
   font-size: 0.75rem;
 }
 
-
+.sub__label {
+  vertical-align: text-bottom;
+  margin-left: .25rem;
+}
 
 
 
