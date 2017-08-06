@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var jade = require('gulp-jade');
+var pug = require('gulp-pug');
 var prettify = require('gulp-prettify');
 var rename = require('gulp-rename');
 var minify = require('gulp-csso');
@@ -32,10 +33,10 @@ gulp.task('bs', function() {
 
 gulp.task('html', function() {
   return gulp.src([
-    paths.src + '**/*.jade',
-    '!' + paths.src + '**/_*.jade'
+    paths.src + '**/*.pug',
+    '!' + paths.src + '**/_*.pug'
     ])
-    .pipe(jade())
+    .pipe(pug())
     .pipe(gulp.dest(paths.dist));
 });
 
@@ -82,7 +83,7 @@ gulp.task('concat', ['css'],function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch([paths.src + '**/*.jade'], ['prettify']);
+  gulp.watch([paths.src + '**/*.pug'], ['prettify']);
   gulp.watch([paths.src + '**/*.css'], ['css']);
 });
 
