@@ -1,0 +1,471 @@
+extends ../_parts/_layout
+
+//------------------
+//- variable
+//------------------
+block var_block
+    - var title             = '初音ファン一同による「初音さんバースデー企画 2016」';//-meta title
+    - var description       = '初音さんのバースデーライブ＆初音茶屋50回記念のライブをファンみんなでお祝いしよう！';//-meta description
+    - var keywords          = '初音,奥村初音,女性シンガーソングライター,歌手,初音茶屋,ライブ,バースデー,誕生日';//-meta keywords
+    - var og_url            = 'http://hatsune.yumetabi.club/birthday2016/';//-og url
+    - var og_type           = 'website';//-og type
+    - var og_title          = title;//-og title
+    - var og_image          = 'http://hatsune.yumetabi.club/birthday2016/img/ogimage.png?20150928';//-og image
+    - var og_description    = description;//-og description
+    - var tw_type           = 'summary_large_image';//-twitter card type
+    - var tw_site           = '@hatsune_movie';
+    - var tw_url            = og_url;
+    - var tw_title          = title;
+    - var tw_description    = description;
+    - var tw_image          = og_image;
+    - var rootPath          = '../'//-root path
+
+//------------------
+//- header meta
+//------------------
+block headMETA
+    link(href="https://fonts.googleapis.com/css?family=Titan+One", rel="stylesheet", type="text/css")
+
+//------------------
+//- header css
+//------------------
+block headCSS
+    link(rel="stylesheet", href="#{rootPath}css/bootstrap.min.css")
+    link(rel="stylesheet", href="#{rootPath}birthday2016/css/style.css")
+
+//------------------s
+//- header js
+//------------------
+block headJS
+    script(src="#{rootPath}js/jquery.min.js")
+
+//- -----------------
+//- Contents
+//- -----------------
+block header_block
+
+block contents_block
+    .main
+        .container-fluid.main__inner
+            .row
+                .offset-md-1.col-md-10.offset-lg-2.col-lg-8
+                    h1.main__title
+                        | Hatsune 
+                        br.hidden-sm-up
+                        | Birthday &
+                        br.hidden-sm-down
+                        |  50th
+                        br.hidden-sm-up
+                        |  Anniversary
+                    h2.main__title2
+                        span
+                            | 初音ファン一同による
+                        br
+                        | 初音さんバースデー＆
+                        br.hidden-sm-up
+                        | 初音茶屋50回記念企画
+                    p.main__title3
+                        | バースデー＆50回記念サプライズは無事終了しました。
+                        br
+                        | ご協力いただいた皆様ありがとうございました！！
+                    p.main__text
+                        | 2016年10月10日、10月16日に「ワンマンライブ初音茶屋≪2016秋≫」が開催されます。
+                        br
+                        | このライブは初音さんにとって26歳のバースデーライブ、そして記念すべき第50回目のワンマンライブとなります。
+                        br
+                        | それに合わせて、ファン一同からバースデーサプライズ＆初音茶屋50回記念のお祝いをしませんか？
+                        br
+                        br
+                        | 10月10日「ワンマンライブ初音茶屋 vol.49」Yokohama O-SITE
+                        br
+                        | 10月16日「ワンマンライブ初音茶屋 vol.50」南堀江knave
+                        br
+                        br
+                        | ※上記の各公演でサプライズ企画への参加とカンパのご協力を募集しています。
+                        br
+                        br
+                        | この企画に賛同し、ご協力いただける方は、ぜひ下記リンクから申し込みページヘ進み、参加登録をお願いします。
+                    p.btn__entry
+                        a.btn(href='http://twipla.jp/events/222530') 参加＆詳細ページヘ
+                    p.main__text2
+                        | ※参加登録にはTwitterのアカウントが必要になります。
+                        br
+                        | Twitterアカウントをお持ちでない方は、
+                        a(href='mailto:yumetabi.club@gmail.com')
+                            | yumetabi.club@gmail.com
+                        | まで、メールにてご連絡ください。
+                        br
+                        | ※この企画は事前にスタッフさんの許可を得て実行しています。
+                    .socialButton
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-text="#{description}" data-hashtags="祝・初音茶屋50回" data-lang="ja">ツイート</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                        <div class="fb-like" data-href="#{og_url}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                        <div class="fb-share-button" data-href="#{og_url}" data-layout="button"></div>
+                        .socialButton__line
+                            <script type="text/javascript" src="//media.line.me/js/line-button.js?v=20140411" ></script>
+                            <script type="text/javascript">new media_line_me.LineButton({"pc":false,"lang":"ja","type":"a"});</script>
+    .sub
+        .container-fluid.sub__inner
+            //- .row
+            //-     .offset-md-1.col-md-10.offset-lg-2.col-lg-8
+            //-         .card.news
+            //-             .sub__title
+            //-                     h2
+            //-                         | ライブレポート 
+            //-                         span.label.label-info.sub__label New
+            //-             .card-block
+            //-                 p.card-text
+            //-                     | バースデーサプライズの結果報告を含む、初音茶屋vol.44＆vol.45のライブレポートをアップしました。他にもレポートが上がっていましたら、ぜひお知らせください。
+            //-                 ul.news__list
+            //-                     li
+            //-                         a(href="http://ameblo.jp/yoshiki-mu/entry-12083230870.html", target='_blank') ＜初音ライブ（初音茶屋）＞Yokohama O-SITEライブレポ（前編）｜良樹（よしき）&#39;s room
+            //-                     li
+            //-                         a(href="http://ameblo.jp/yoshiki-mu/entry-12083231136.html", target='_blank') ＜初音ライブ（初音茶屋）＞Yokohama O-SITEライブレポ（後編）｜良樹（よしき）&#39;s room
+            //-                     li
+            //-                         a(href="http://ameblo.jp/yoshiki-mu/entry-12083633580.html", target='_blank') ＜初音ライブ（初音茶屋）＞umeda AKASOライブレポ（前編）｜良樹（よしき）&#39;s room
+            //-                     li
+            //-                         a(href="http://ameblo.jp/yoshiki-mu/entry-12083633861.html", target='_blank') ＜初音ライブ（初音茶屋）＞umeda AKASOライブレポ（後編）｜良樹（よしき）&#39;s room
+            //-                     li
+            //-                         a(href="http://littlebird.mobi/2015/10/hatsunejaya44/", target='_blank') ライブレポート：ワンマンライブ初音茶屋 vol.44 〜THE BIRTHDAY 二十五伝〜 | littlebird
+
+            .row
+                .offset-md-1.col-md-10.offset-lg-2.col-lg-8
+                    .card
+                        .sub__title
+                                h2
+                                    | サプライズ企画の結果報告
+                                    span.tag.tag-primary.sub__label New
+                        .card-block
+                            p.card-text
+                                | 今年のバースデー＆50回記念のサプライズ企画も無事に成功しました。
+                                br
+                                | 当日の写真と合わせて、簡単に結果を報告させていただきます！
+                                //- br
+                                //- | （フライヤーは、横浜と大阪の各公演バージョンがあります）
+                            .row
+                                .col-sm-6
+                                    p.text-xs-center
+                                        a(href='img/surprise_yokohama01.jpg', target='_blank')
+                                            img(src="img/surprise_yokohama01_s.jpg")
+                                        br
+                                        | 10/10の横浜公演で初音さんにお渡しした花束。
+                                .col-sm-6
+                                    p.text-xs-center
+                                        a(href='img/surprise_osaka01.jpg', target='_blank')
+                                            img(src="img/surprise_osaka01_s.jpg")
+                                        br
+                                        | 10/16の大阪公演で初音さんにお渡しした花束。
+                            .row
+                                .col-sm-6
+                                    p.text-xs-center
+                                        a(href='img/surprise_yokohama02.jpg', target='_blank')
+                                            img(src="img/surprise_yokohama02_s.jpg")
+                                        br
+                                        | 横浜公演では、みんなからのメッセージカードをこんなボックスに入れてお渡ししました。
+                                .col-sm-6
+                                    p.text-xs-center
+                                        a(href='img/surprise_osaka02.jpg', target='_blank')
+                                            img(src="img/surprise_osaka02_s.jpg")
+                                        br
+                                        | 大阪公演では「ツネキチ・フラッグ」をみんなで掲げてお祝いしました。
+                            .row
+                                .col-sm-6
+                                    p.text-xs-center
+                                        a(href='img/surprise_osaka03.jpg', target='_blank')
+                                            img(src="img/surprise_osaka03_s.jpg")
+                                        br
+                                        | 大阪公演では、みんなからのメッセージカードをこんなボックスに入れてお渡ししました。
+                                .col-sm-6
+                                    p.text-xs-center
+                                        a(href='img/surprise_osaka04.jpg', target='_blank')
+                                            img(src="img/surprise_osaka04_s.jpg")
+                                        br
+                                        | 大阪公演では「祝50」と書かれたツネキチ・デザインのメッセージカードでみんなでお祝いの言葉を書きました。
+
+            .row
+                .offset-md-1.col-md-10.offset-lg-2.col-lg-8
+                    .card.news
+                        .sub__title
+                                h2
+                                    | 初音茶屋・最新情報
+                                    //- span.tag.tag-primary.sub__label New
+                        .card-block
+                            p.card-text
+                                | ゆーりらやオフィシャルブログ等で発表された初音さんの発言から、初音茶屋vol.49＆vol.50の最新情報をまとめてみました。
+                            ul.news__list
+                                li
+                                    span.news__title チーム初音のメンバー決定
+                                    br
+                                    | 初音茶屋vol.49＆vol.50のメンバーは、ボーカル／キーボード：初音さん、ギター：馬場一人さん、バイオリン：MIZさん、パーカッション：矢吹正則さん に決定しました。
+                                li
+                                    span.news__title 初音茶屋vol.49＆vol.50限定グッズが発表
+                                    br
+                                    a(href="http://ameblo.jp/koi-tsumugi/entry-12207714244.html", target='_blank') オフィシャルブログ
+                                    | でA4クリアファイル2種（各￥500）、フォトセット（5枚入り￥1000）、フォトセット 表紙&アルバム付きver.（￥1500）の販売が発表されました。
+                                li
+                                    span.news__title 初音茶屋vol.49＆vol.50限定グッズ（続報）が発表
+                                    br
+                                    a(href="http://ameblo.jp/koi-tsumugi/entry-12208083463.html", target='_blank') オフィシャルブログ
+                                    | でグッドナイトレディオの販売が発表されました。また、ヒトリラツアー'16で販売されていたライブDVD「絵つむぎ」とツアーパンフレットも販売されるそうです。（横浜公演での物販は開場時間14:30からスタートの予定）
+            //-                     li
+            //-                         span.news__title バースデーライブ用の新グッズの販売
+            //-                         br
+            //-                         a(href="http://ameblo.jp/koi-tsumugi/entry-12082845492.html", target='_blank') オフィシャルブログ
+            //-                         | でバースデースペシャルセットとコンセプトチェキ、キーホルダーの販売が発表。横浜公演の物販は
+            //-                         span.text-danger 開場前14:00〜
+            //-                         | 、大阪公演の物販は
+            //-                         span.text-danger 開場時間14:30〜
+            //-                         | に決まりました。
+            //-                     li
+            //-                         span.news__title グッドナイトレディオ第2弾の販売
+            //-                         br
+            //-                         | Pop’n Rockでも販売された円盤限定ラジオ「グッドナイトレディオ」の第2弾が、今回の初音茶屋でも
+            //-                         a(href="http://ameblo.jp/koi-tsumugi/entry-12082845492.html", target='_blank') 販売されるそうです
+            //-                         | 。
+            //-                     li
+            //-                         span.news__title 初音茶屋vol.46 チケットの最速販売
+            //-                         br
+            //-                         | 初音茶屋vol.44＆vol.45の会場にて、
+            //-                         a(href="http://ameblo.jp/koi-tsumugi/entry-12079440126.html", target='_blank') 次回11月初音茶屋
+            //-                         | のチケットが先行販売されます。
+            //-                         br
+            //-                         | 横浜公演では
+            //-                         span.text-danger 開場前14:00〜
+            //-                         | 整理番号先着順で販売。大阪公演では
+            //-                         span.text-danger 終演後
+            //-                         | に販売に決まりました。
+            //-                     li
+            //-                         span.news__title 初披露の曲（新曲）あり
+            //-                         br
+            //-                         | 今回、
+            //-                         a(href="http://ameblo.jp/koi-tsumugi/entry-12082163945.html", target='_blank') 初披露の曲がある
+            //-                         | とのことで、どうやら現在制作中の新曲のようです。
+            //-                     li
+            //-                         span.news__title オフィシャルファンクラブの詳細が発表（？）
+            //-                         br
+            //-                         | 初音オフィシャルFCの開設＆登録開始が、10/11頃と言われており、もしかすると初音茶屋の会場で正式発表になるかもしれません。
+
+            .row
+                .offset-md-1.col-md-10.offset-lg-2.col-lg-8
+                    .card
+                        .sub__title
+                                h2
+                                    | サプライズ企画の詳細
+                                    //- span.tag.tag-primary.sub__label New
+                        .card-block
+                            p.card-text
+                                | 横浜公演に続いて、大阪公演のサプライズ企画のフライヤーが完成しました。
+                                br
+                                | 10/16の初音茶屋に参加予定のファンの方は、ぜひ事前にチェックしておきましょう！
+                                //- br
+                                //- | （フライヤーは、横浜と大阪の各公演バージョンがあります）
+                            .row
+                                .col-sm-6
+                                    p.text-xs-center
+                                        a(href='img/hatsune_birthday2016_1010.jpg', target='_blank')
+                                            img(src="img/hatsune_birthday2016_1010_s.jpg")
+                                            br
+                                            | 10/10 横浜公演版
+                                .col-sm-6
+                                    p.text-xs-center
+                                        a(href='img/hatsune_birthday2016_1016.jpg', target='_blank')
+                                            img(src="img/hatsune_birthday2016_1016_s.jpg")
+                                            br
+                                            | 10/16 大阪公演版
+            .row
+                .offset-md-1.col-md-10.offset-lg-2.col-lg-8
+                    .card
+                        .sub__title
+                                h2
+                                    | 当日のサークル活動について
+                                    //- span.tag.tag-primary.sub__label New
+                        .card-block
+                            p.card-text
+                                | 横浜公演、大阪公演共にライブ前に「サークル活動」を行い、サプライズ企画の準備を行います。ご都合のつく方は、ぜひこちらもご参加ください。集合時間・日時は、それぞれ以下の通りです。
+                                br
+                                br
+                                | 【横浜公演】
+                                br
+                                | 集合時間…11:00
+                                br
+                                | 集合場所…相鉄線の横浜駅みなみ西口改札前（会場のYokohama O-SITEから一番近くて目印になる改札前です）
+                                br
+                                br
+                                | 【大阪公演】
+                                br
+                                | 集合時間…11:00
+                                br
+                                | 集合場所…JR大阪駅 3F連絡橋口改札前
+                                br
+                                br
+                                | 集合場所で合流してから「サークル活動」（サプライズの準備）を行う場所に移動します。
+                                br
+                                | 集合時間に間に合わない方は、途中参加も大歓迎です。
+                            p.card-text.sub__text2
+                                | ※途中参加希望の方は、待ち合わせの方法等を個別にご連絡しますので、
+                                a(href="https://twitter.com/yoshiki_mu", target='_blank') @yoshiki_mu
+                                | までご相談ください。
+            .row
+                .offset-md-1.col-md-10.offset-lg-2.col-lg-8
+                    .card
+                        .sub__title
+                                h2
+                                    | 初音さんについて
+                        .card-block
+                            .media
+                                .media-left
+                                    img.media-object(src="https://twitter.com/hatsune1011/profile_image?size=original", width="73", height="73")
+                                .media-body
+                                    | 1990年10月11日生まれ、大阪出身のシンガーソングライター。（愛称：は〜ちゃん）
+                                    br
+                                    | 2007年「恋、花火」でデビューし、ドラマの主題歌なども多数手がける。
+                                    br
+                                    | 切ない恋心を描いたラブソングを始め、その作品の世界観と、透き通るような歌声には定評が高い。
+                                    br
+                                    | 2015年には、3rdアルバム「風は君の答えを待っている」とミニアルバム「恋ノート1」をリリース。
+                            p.text-xs-right.m-t.m-b-0
+                                a.card-link(href='http://www.hatsune-gmjp.com/', target='_blank') オフィシャルサイトはこちら
+            .row
+                .offset-md-1.col-md-10.offset-lg-2.col-lg-8
+                    .card
+                        .sub__title
+                                h2
+                                    | 初音茶屋について
+                        .card-block
+                            p.card-text
+                                | 初音さんが2010年から開催していて、通算50回目を迎える恒例のワンマンライブ。
+                                br
+                                | おなじみの楽曲はもちろん、みんなが知ってるカバー曲や、子供の頃から作り続けている曲を披露するコーナーなど、初めて来た人でも楽しめる仕掛けが満載。初音さんがチーム・初音のメンバーと繰り広げる、独特の『ゆるゆるトーク』にも癒やされること請け合いです。
+                            p.text-xs-right
+                                a.card-link(href='http://www.hatsune-gmjp.com/live', target='_blank') チケット情報はこちら
+                            .embed-responsive.embed-responsive-16by9
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/BBSqyQnqL-E" frameborder="0" allowfullscreen></iframe>
+            .row
+                .col-sm-6.offset-md-1.col-md-5.offset-lg-2.col-lg-4
+                    .card.tweet
+                        .sub__title
+                                h2
+                                    | 初音茶屋に関するツイート
+                        .card-block.tweet__inner
+                            p.card-text
+                                | 「初音茶屋」に関する最新の話題をチェックしましょう。
+                            <a class="twitter-timeline" href="https://twitter.com/hashtag/%E5%88%9D%E9%9F%B3%E8%8C%B6%E5%B1%8B" data-widget-id="649432751133716484">#初音茶屋 のツイート</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                .col-sm-6.col-md-5.col-lg-4
+                    .card
+                        .sub__title
+                                h2
+                                    | 初音さんのFacebookページ
+                        .card-block
+                            p.card-text
+                                 | 公式Facebookページでも最新の情報をチェックできます。
+                            <div class="fb-page" data-href="https://www.facebook.com/%E5%88%9D%E9%9F%B3%E5%85%88%E7%94%9F-312494772121781/" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="true"></div>
+            .row
+                .offset-md-1.col-md-10.offset-lg-2.col-lg-8
+                    .card
+                        .sub__title
+                                h2
+                                    span.hidden-xs-down 初音さんに
+                                    | お祝いのメッセージを送ろう
+                                    //- span.tag.tag-primary.sub__label New
+                        .card-block
+                            p.card-text
+                                | 10/10、10/16のワンマンライブには参加できないけど、初音さんの誕生日＆50回記念をお祝いしたい！
+                                br
+                                | そんな方は、ぜひお祝いのメッセージをツイートしませんか？
+                                br
+                                | もちろん、初音茶屋に参加する方からのメッセージも大歓迎です♪
+                            p.btn__tweet
+                                a.btn(href='https://twitter.com/intent/tweet?hashtags=初音生誕祭', target='_blank') #初音生誕祭 のハッシュタグをつけてツイート
+                            p.btn__tweet
+                                a.btn(href='https://twitter.com/intent/tweet?hashtags=祝・初音茶屋50回', target='_blank') #祝・初音茶屋50回 のハッシュタグをつけてツイート
+            //- .row
+            //-     .offset-md-1.col-md-10.offset-lg-2.col-lg-8
+            //-         .card
+            //-             .sub__title
+            //-                     h2
+            //-                         span.hidden-xs-down 初音さんに
+            //-                         | お祝いのメッセージを送ろう
+            //-             .card-block
+            //-                 p.card-text
+            //-                     | 10/10、10/16のワンマンライブには参加できないけど、初音さんの誕生日＆50回記念をお祝いしたい！
+            //-                     br
+            //-                     | そんな方は、ぜひお祝いのメッセージをツイートしませんか？
+            //-                     br
+            //-                     | もちろん、初音茶屋に参加する方からのメッセージも大歓迎です♪
+            //-                 p.btn__tweet
+            //-                     a.btn(href='https://twitter.com/intent/tweet?hashtags=祝・初音茶屋50回', target='_blank') #祝・初音茶屋50回 のハッシュタグをつけてツイート
+            .row
+                .offset-md-1.col-md-10.offset-lg-2.col-lg-8
+                    .card.accounts
+                        .sub__title
+                                h2
+                                    | おすすめのTwitterアカウント
+                        .card-block.accounts__inner
+                            .row
+                                .col-sm-6
+                                    .media.account
+                                        .media-left
+                                            a(href="https://twitter.com/hatsune1011", target='_blank')
+                                                img.media-object(src="https://twitter.com/hatsune1011/profile_image?size=bigger", width="48", height="48")
+                                        .media-body
+                                            a(href="https://twitter.com/hatsune1011", target='_blank')
+                                                h3.media-heading.account__name @hatsune1011
+                                            p
+                                                | 初音さんの公式アカウント。
+                                                br
+                                                | ブログの更新と合わせてチェック！
+                                .col-sm-6
+                                    .media.account
+                                        .media-left
+                                            a(href="https://twitter.com/hatsune_web", target='_blank')
+                                                img.media-object(src="https://twitter.com/hatsune_web/profile_image?size=bigger", width="48", height="48")
+                                        .media-body
+                                            a(href="https://twitter.com/hatsune_web", target='_blank')
+                                                h3.media-heading.account__name @hatsune_web
+                                            | 初音 WEBSTAFFさんの公式アカウント。
+                                            br
+                                            | ライブ情報をはじめインフォメーション関連はこちら。
+                            .row.m-t
+                                .col-sm-6
+                                    .media.account
+                                        .media-left
+                                            a(href="https://twitter.com/pj_live", target='_blank')
+                                                img.media-object(src="https://twitter.com/pj_live/profile_image?size=bigger", width="48", height="48")
+                                        .media-body
+                                            a(href="https://twitter.com/pj_live", target='_blank')
+                                                h3.media-heading.account__name @pj_live
+                                            | リブラス＆初音さん応援ちう♪
+                                            br
+                                            | 初音さんとリブライト・ラスタンドの情報をツイートしている非公式アカウント。
+                                .col-sm-6
+                                    .media.account
+                                        .media-left
+                                            a(href="https://twitter.com/hatsune_movie", target='_blank')
+                                                img.media-object(src="https://twitter.com/hatsune_movie/profile_image?size=bigger", width="48", height="48")
+                                        .media-body
+                                            a(href="https://twitter.com/hatsune_movie", target='_blank')
+                                                h3.media-heading.account__name @hatsune_movie
+                                            | 初音 動画bot。
+                                            br
+                                            | 初音さんのYoutube動画をツイートしている非公式アカウント。
+                            .row.m-t
+                                .col-sm-6
+                                    .media.account
+                                        .media-left
+                                            a(href="https://twitter.com/hatsune_song", target='_blank')
+                                                img.media-object(src="https://twitter.com/hatsune_song/profile_image?size=bigger", width="48", height="48")
+                                        .media-body
+                                            a(href="https://twitter.com/hatsune_song", target='_blank')
+                                                h3.media-heading.account__name @hatsune_song
+                                            p
+                                                | 初音 歌詞bot。
+                                                br
+                                                | 初音さんの楽曲の歌詞をツイートしている非公式アカウント。
+
+    footer.footer
+        p.copyright
+            | Powered by Hatsune Fans.
+
+
+block footer_block
