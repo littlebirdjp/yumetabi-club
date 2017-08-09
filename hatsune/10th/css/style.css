@@ -11,12 +11,28 @@ body {
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
   font-size: 0.875rem;
+  background-color: #959EC9;
 }
 
 @media (max-width: 34em) {
   body {
     font-size: 0.75rem;
   }
+}
+
+body::before {
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 1600px auto;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: -1;
 }
 
 a {
@@ -36,29 +52,23 @@ a:active {
   text-decoration: none;
 }
 
-.main {
-  background-image: linear-gradient(-180deg, rgba(237,255,41,0.65) 0%, rgba(255,225,113,0.01) 20%);
-  background-repeat: repeat-x;
-}
 
-.main__inner {
-  background-image: url(../img/fox@2x.png);
-  background-repeat: repeat-x;
-  background-size: 165px 136px;
-  background-position: 5px 10px;
-}
+
+
 
 .main__title {
-  font-family: 'Titan One', cursive;
-  font-size: 3.5rem;
-  color: #2C86FF;
+  font-family: 'Tinos', serif;
+  font-size: 5rem;
+  color: #E90060;
+  -webkit-text-stroke: 1px #fff;
   text-align: center;
   padding-top: 160px;
+  padding: 160px 0 30px;
 }
 
 @media (max-width: 34em) {
   .main__title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     line-height: 1.1;
   }
 }
@@ -66,7 +76,7 @@ a:active {
 .main__title2 {
   font-size: 1.25rem;
   line-height: 1.6;
-  color: #FF003E;
+  color: #ff6600;
   text-align: center;
 }
 
@@ -104,7 +114,7 @@ a:active {
 
 .main__text {
   font-size: 0.875rem;
-  margin: 40px auto;
+  margin: 35px auto;
 }
 
 @media (max-width: 34em) {
@@ -115,7 +125,18 @@ a:active {
 
 .main__text2 {
   font-size: 0.75rem;
-  margin: 40px auto;
+  margin: 40px auto 30px;
+}
+
+.main__detail {
+  background: #fff;
+  padding: 1.5rem 2rem .5rem;
+}
+
+@media (max-width: 34em) {
+  .main__detail {
+    padding: .5rem 1rem .5rem;
+  }
 }
 
 .socialButton {
@@ -213,7 +234,7 @@ a:active {
 
 .btn__entry a {
   color: #FFF;
-  background: #FF5C87;
+  background: #5050C5;
   border: none;
   border-radius: 0.5rem;
   padding: .5rem 4rem;
@@ -222,7 +243,7 @@ a:active {
 
 .btn__entry a:hover,
 .btn__entry a:active {
-  background: rgb(255, 102, 143);
+  background: rgb(140, 140, 217);
 }
 
 @media (min-width: 34em) {
@@ -238,14 +259,14 @@ a:active {
 
 .btn__tweet a {
   color: #FFF;
-  background: #FF5C87;
+  background: #5050C5;
   border: none;
   border-radius: .4rem;
   padding: .4rem 2rem;
 }
 
 .btn__tweet a:hover {
-  background: rgb(255, 102, 143);
+  background: rgb(140, 140, 217);
 }
 
 @media (max-width: 34em) {
