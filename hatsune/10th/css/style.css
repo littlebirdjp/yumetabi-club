@@ -54,8 +54,6 @@ a:active {
 
 
 
-
-
 .main__title {
   font-family: 'Tinos', serif;
   font-size: 5rem;
@@ -174,14 +172,14 @@ a:active {
 }
 
 .sub__title h2 {
-  background-image: url(../img/fox2@2x.png);
-  background-size: 31px 29px;
-  background-position: 10px 5px;
+  background-image: url(../img/fireworks.png);
+  background-size: 33px 33px;
+  background-position: 8px 1px;
   background-repeat: no-repeat;
   font-size: 1.063rem;
-  padding-left: 3.2rem;
+  padding-left: 3rem;
   margin-bottom: 0;
-  color: #2C86FF;
+  color: #E90060;
   line-height: 42px;
 }
 

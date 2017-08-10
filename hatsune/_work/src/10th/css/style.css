@@ -21,21 +21,20 @@ body {
   @media (max-width: $screen-sm) {
     font-size: 0.75rem;
   }
-}
-
-body::before {
-  background-image: url(../img/bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 1600px auto;
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  content: "";
-  z-index: -1;
+  &::before{
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 1600px auto;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+  }
 }
 
 a {
@@ -54,8 +53,6 @@ a {
 }
 
 .main {
-  &__inner {
-  }
   &__title {
     font-family: 'Tinos', serif;
     font-size: 5rem;
@@ -142,14 +139,14 @@ a {
     background-size: 4px 43px;
     background-repeat: repeat-x;
     h2 {
-      background-image : url(../img/fox2@2x.png);
-      background-size: 31px 29px;
-      background-position: 10px 5px;
+      background-image : url(../img/fireworks.png);
+      background-size: 33px 33px;
+      background-position: 8px 1px;
       background-repeat: no-repeat;
       font-size: 1.063rem;
-      padding-left: 3.2rem;
+      padding-left: 3rem;
       margin-bottom: 0;
-      color: #2C86FF;
+      color: #E90060;
       line-height: 42px;
       @media (max-width: $screen-md) {
         font-size: .9rem;

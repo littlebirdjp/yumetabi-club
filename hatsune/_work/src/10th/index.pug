@@ -10,7 +10,7 @@ block var_block
     - var og_url            = 'http://hatsune.yumetabi.club/10th/';//-og url
     - var og_type           = 'website';//-og type
     - var og_title          = title;//-og title
-    - var og_image          = 'http://hatsune.yumetabi.club/10th/img/ogimage.png?20170809';//-og image
+    - var og_image          = 'http://hatsune.yumetabi.club/10th/img/ogimage.png?20170810';//-og image
     - var og_description    = description;//-og description
     - var tw_type           = 'summary_large_image';//-twitter card type
     - var tw_site           = '@hatsune_movie';
@@ -93,9 +93,10 @@ block contents_block
                           | ※この企画は事前にスタッフさんの許可を得て実行しています。
                     .socialButton
                       a(href='https://twitter.com/share', class='twitter-share-button', data-text=description, data-hashtags='初音10th', data-lang='ja') ツイート
-                      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                      <div class="fb-like" data-href="og_url" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-                      <div class="fb-share-button" data-href="og_url" data-layout="button"></div>
+                      script.
+                        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+                      div(class='fb-like', data-href=og_url, data-layout='button_count', data-action='like', data-show-faces='false', data-share='false')
+                      div(class='fb-share-button', data-href=og_url, data-layout='button')
                       .socialButton__line
                           <script type="text/javascript" src="//media.line.me/js/line-button.js?v=20140411" ></script>
                           <script type="text/javascript">new media_line_me.LineButton({"pc":false,"lang":"ja","type":"a"});</script>
@@ -300,7 +301,7 @@ block contents_block
             //-                     | ※途中参加希望の方は、待ち合わせの方法等を個別にご連絡しますので、
             //-                     a(href="https://twitter.com/yoshiki_mu", target='_blank') @yoshiki_mu
             //-                     | までご相談ください。
-            .row
+            .row.mb-3
                 .offset-md-1.col-md-10.offset-lg-2.col-lg-8
                     .card
                         .sub__title
@@ -308,7 +309,7 @@ block contents_block
                                     | 初音さんについて
                         .card-block
                             .media
-                                .media-left
+                                .media-left.mr-2
                                     img.media-object(src="https://avatars.io/twitter/hatsune1011/", width="73", height="73")
                                 .media-body
                                     | 1990年10月11日生まれ、大阪出身のシンガーソングライター。（愛称：は〜ちゃん）
@@ -334,7 +335,7 @@ block contents_block
             //-                 .embed-responsive.embed-responsive-16by9
             //-                     <iframe width="560" height="315" src="https://www.youtube.com/embed/BBSqyQnqL-E" frameborder="0" allowfullscreen></iframe>
             .row
-                .col-sm-6.offset-md-1.col-md-5.offset-lg-2.col-lg-4
+                .col-sm-6.offset-md-1.col-md-5.offset-lg-2.col-lg-4.mb-3
                     .card.tweet
                         .sub__title
                                 h2
@@ -344,7 +345,7 @@ block contents_block
                                 | 初音さん10周年に関する最新の話題をチェックしましょう。
                             <a class="twitter-timeline"  href="https://twitter.com/hashtag/%E5%88%9D%E9%9F%B310th" data-widget-id="895109782062866434">#初音10th のツイート</a>
                             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                .col-sm-6.col-md-5.col-lg-4
+                .col-sm-6.col-md-5.col-lg-4.mb-3
                     .card
                         .sub__title
                                 h2
@@ -353,7 +354,7 @@ block contents_block
                             p.card-text
                                  | 公式Facebookページでも最新の情報をチェックできます。
                             <div class="fb-page" data-href="https://www.facebook.com/%E5%88%9D%E9%9F%B3%E5%85%88%E7%94%9F-312494772121781/" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="true"></div>
-            .row
+            .row.mb-3
                 .offset-md-1.col-md-10.offset-lg-2.col-lg-8
                     .card
                         .sub__title
@@ -386,7 +387,7 @@ block contents_block
             //-                     | もちろん、初音茶屋に参加する方からのメッセージも大歓迎です♪
             //-                 p.btn__tweet
             //-                     a.btn(href='https://twitter.com/intent/tweet?hashtags=祝・初音茶屋50回', target='_blank') #祝・初音茶屋50回 のハッシュタグをつけてツイート
-            .row
+            .row.mb-3
                 .offset-md-1.col-md-10.offset-lg-2.col-lg-8
                     .card.accounts
                         .sub__title
@@ -396,7 +397,7 @@ block contents_block
                             .row
                                 .col-sm-6
                                     .media.account
-                                        .media-left
+                                        .media-left.mr-2
                                             a(href="https://twitter.com/hatsune1011", target='_blank')
                                                 img.media-object(src="https://avatars.io/twitter/hatsune1011/", width="48", height="48")
                                         .media-body
@@ -406,9 +407,9 @@ block contents_block
                                                 | 初音さんの公式アカウント。
                                                 br
                                                 | ブログの更新と合わせてチェック！
-                                .col-sm-6
+                                .col-sm-6.mt-2
                                     .media.account
-                                        .media-left
+                                        .media-left.mr-2
                                             a(href="https://twitter.com/hatsune_web", target='_blank')
                                                 img.media-object(src="https://avatars.io/twitter/hatsune_web/", width="48", height="48")
                                         .media-body
@@ -417,10 +418,10 @@ block contents_block
                                             | 初音 WEBSTAFFさんの公式アカウント。
                                             br
                                             | ライブ情報をはじめインフォメーション関連はこちら。
-                            .row.m-t
-                                .col-sm-6
+                            .row
+                                .col-sm-6.mt-2
                                     .media.account
-                                        .media-left
+                                        .media-left.mr-2
                                             a(href="https://twitter.com/pj_live", target='_blank')
                                                 img.media-object(src="https://avatars.io/twitter/pj_live/", width="48", height="48")
                                         .media-body
@@ -429,9 +430,9 @@ block contents_block
                                             | リブラス＆初音さん応援ちう♪
                                             br
                                             | 初音さんとリブライト・ラスタンドの情報をツイートしている非公式アカウント。
-                                .col-sm-6
+                                .col-sm-6.mt-2
                                     .media.account
-                                        .media-left
+                                        .media-left.mr-2
                                             a(href="https://twitter.com/hatsune_movie", target='_blank')
                                                 img.media-object(src="https://avatars.io/twitter/hatsune_movie/", width="48", height="48")
                                         .media-body
@@ -440,10 +441,10 @@ block contents_block
                                             | 初音 動画bot。
                                             br
                                             | 初音さんのYoutube動画をツイートしている非公式アカウント。
-                            .row.m-t
-                                .col-sm-6
+                            .row
+                                .col-sm-6.mt-2
                                     .media.account
-                                        .media-left
+                                        .media-left.mr-2
                                             a(href="https://twitter.com/hatsune_song", target='_blank')
                                                 img.media-object(src="https://avatars.io/twitter/hatsune_song/", width="48", height="48")
                                         .media-body
