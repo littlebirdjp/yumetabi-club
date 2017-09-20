@@ -1,11 +1,11 @@
-extends ../_parts/_layout
+extends ../../_parts/_layout
 
 //------------------
 //- variable
 //------------------
 block var_block
-    - var title             = '初音ファン一同による「初音さんデビュー10周年記念企画」第2弾';//-meta title
-    - var description       = '初音さんの誕生日＆デビュー10周年記念ツアーをファンみんなでお祝いしよう！';//-meta description
+    - var title             = '初音ファン一同による「初音さんデビュー10周年記念企画」';//-meta title
+    - var description       = '初音さんのデビュー10周年記念ライブをファンみんなでお祝いしよう！';//-meta description
     - var keywords          = '初音,奥村初音,女性シンガーソングライター,歌手,ライブ,10周年';//-meta keywords
     - var og_url            = 'http://hatsune.yumetabi.club/10th/';//-og url
     - var og_type           = 'website';//-og type
@@ -18,7 +18,7 @@ block var_block
     - var tw_title          = title;
     - var tw_description    = description;
     - var tw_image          = og_image;
-    - var rootPath          = '../'//-root path
+    - var rootPath          = '../../'//-root path
 
 //------------------
 //- header meta
@@ -60,40 +60,28 @@ block contents_block
                           span
                               | 初音ファン一同による
                           br
-                          | 初音さんデビュー10周年記念企画・第2弾
-                      //- p.main__title3
-                      //-     | デビュー10周年記念サプライズは無事終了しました。
-                      //-     br
-                      //-     | ご協力いただいた皆様ありがとうございました！！
+                          | 初音さんデビュー10周年記念企画
+                      p.main__title3
+                          | デビュー10周年記念サプライズは無事終了しました。
+                          br
+                          | ご協力いただいた皆様ありがとうございました！！
                       p.main__text
-                          | 10月8日（日）の「ワンマンライブ初音茶屋vol.51」を皮切りに、初音さんの10thAnniversaryツアーが開催されます。
+                          | 2017年9月10日に「初音 10thAnniversaryLive2017 ～16歳の頃の夢、覚えていますか？～」が開催されます。
                           br
-                          | このツアーは、9月5日にデビュー10周年を迎えた初音さんにとって記念となるツアーであると同時に、東京初音茶屋は初音さんの誕生日の直近ということもあり、バースデーライブの意味合いもあります。
+                          | このライブは9/5にデビュー10周年を迎える初音さんにとって記念すべきワンマンライブとなります。
                           br
-                          | それに合わせて、ファン一同から誕生日＆デビュー10周年記念のお祝いをしませんか？
-                          br
-                          br
-                          | 10月8日（日）【東京】ワンマンライブ初音茶屋vol.51
-                          br
-                          | 10月22日（日）【札幌】初音のヒトリラツアー’17～札幌編～
-                          br
-                          | 11月5日（日）【福岡】初音のヒトリラツアー’17～福岡編～
-                          br
-                          | 11月26日（日）【名古屋】ワンマンライブ初音茶屋vol.52
-                          br
-                          | 12月10日（日）【大阪FINAL】ワンマンライブ初音茶屋vol.53
+                          | それに合わせて、ファン一同からサプライズ＆デビュー10周年記念のお祝いをしませんか？
                           br
                           br
+                          | 9月10日「初音 10thAnniversaryLive2017 ～16歳の頃の夢、覚えていますか？～」渋谷 Star lounge
                           br
-                          | 上記公演でサプライズ企画への参加とカンパのご協力を募集しています。
+                          br
+                          | ※上記公演でサプライズ企画への参加とカンパのご協力を募集しています。
+                          br
                           br
                           | この企画に賛同し、ご協力いただける方は、ぜひ下記リンクから申し込みページヘ進み、参加登録をお願いします。
-                          br
-                          br
-                          | ※前回9月10日の「初音 10thAnniversaryLive2017 ～16歳の頃の夢、覚えていますか？～」のサプライズの様子は
-                          a(href='./20170910/') こちら
                       p.btn__entry
-                          a.btn(href='http://twipla.jp/events/278299') 参加ページヘ
+                          a.btn(href='http://twipla.jp/events/271962') 参加ページヘ
                       p.main__text2
                           | ※参加登録にはTwitterのアカウントが必要になります。
                           br
@@ -115,92 +103,92 @@ block contents_block
     .sub
         .container-fluid.sub__inner
 
-            //- .row.mb-3
-            //-     .offset-md-1.col-md-10.offset-lg-2.col-lg-8
-            //-         .card
-            //-             .sub__title
-            //-                     h2
-            //-                         | サプライズ企画の結果報告
-            //-                         span.badge.badge-primary.sub__label New
-            //-             .card-block
-            //-                 p.card-text
-            //-                     | デビュー10周年記念サプライズは無事に成功しました。
-            //-                     br
-            //-                     | 当日の写真と合わせて、簡単に結果を報告させていただきます！
-            //-                     //- br
-            //-                     //- | （フライヤーは、横浜と大阪の各公演バージョンがあります）
-            //-                 .row.text-center
-            //-                     .col
-            //-                         p.text-xs-center
-            //-                             a(href='img/surprise01.jpg', target='_blank')
-            //-                                 img.mb-1(src="img/surprise01_s.jpg")
-            //-                             br
-            //-                             | 初音さんにプレゼントした10周年記念の横断幕。
-            //-                             br
-            //-                             | ファン一同からのお祝いのメッセージを書き込んで、
-            //-                             br
-            //-                             | アンコールのタイミングでステージに向かって掲げました。
-            //-                 .row
-            //-                     .col-md-6
-            //-                         p.text-center
-            //-                             a(href='img/surprise02.jpg', target='_blank')
-            //-                                 img.mb-1(src="img/surprise02_s.jpg")
-            //-                             br
-            //-                             | 初音さんにプレゼントしたフラワースタンド。
-            //-                             br
-            //-                             | 開演前に会場の入口に飾ってもらいました。
-            //-                     .col-md-6
-            //-                         p.text-center
-            //-                             a(href='img/surprise03.jpg', target='_blank')
-            //-                                 img.mb-1(src="img/surprise03_s.jpg")
-            //-                             br
-            //-                             | 初音さんにプレゼントしたお祝いの花束。
-            //-                             br
-            //-                             | サプライズのタイミングで、
-            //-                             br
-            //-                             | ステージ上の初音さんに手渡ししました。
-            //-
-            //-
-            //- .row.mb-3
-            //-     .offset-md-1.col-md-10.offset-lg-2.col-lg-8
-            //-         .card
-            //-             .sub__title
-            //-                     h2
-            //-                         | 当日のサークル活動について
-            //-                         //- span.tag.tag-primary.sub__label New
-            //-             .card-block
-            //-                 p.card-text
-            //-                     | 9月10日のライブ前に「サークル活動」を行い、サプライズ企画の準備を行います。
-            //-                     br
-            //-                     | サプライズ企画への参加・不参加に関わらず、一人でも多くの方にご協力をお願いしたいと思っています。
-            //-                     br
-            //-                     | ライブ当日は会場の入口付近で順次お声がけさせていただく予定なので、何卒よろしくお願い致します。
-            //-
-            //-                 dl
-            //-                   dt 集合時間
-            //-                   dd
-            //-                     | 14:00〜15:00ぐらいまで
-            //-                   dt 集合場所
-            //-                   dd
-            //-                     | 渋谷区宇田川町36-2 ノア渋谷会議室『ジョブズ』511号室
-            //-                     br
-            //-                     | （当日のライブ会場「渋谷Star lounge」のすぐ近く、東急ハンズの向かいの建物です）
-            //-                   dt 準備の内容
-            //-                   dd
-            //-                     span.text-danger
-            //-                       | 初音さんにプレゼントする横断幕にお祝いのメッセージを書いてもらいます。
-            //-                     br
-            //-                     | 一度に会議室に入れる人数に制限があるため、入れ替わりでのご対応をお願いいたします。
-            //-
-            //-                 p.card-text
-            //-                     | 時間は14時から開場になる15分前くらいであれば何時でもOKです。
-            //-                     br
-            //-                     | 直接サークル会場に来ていただいても結構ですし、場所が分からなければ「Star lounge」前に案内の人が居ますので、そちらに行ってもらっても大丈夫です。
-            //-
-            //-                 p.card-text.sub__text2
-            //-                     | ※当日のサークル活動について不明点やご質問がある場合は、
-            //-                     a(href="https://twitter.com/yoshiki_mu", target='_blank') @yoshiki_mu
-            //-                     | までご連絡ください。
+            .row.mb-3
+                .offset-md-1.col-md-10.offset-lg-2.col-lg-8
+                    .card
+                        .sub__title
+                                h2
+                                    | サプライズ企画の結果報告
+                                    span.badge.badge-primary.sub__label New
+                        .card-block
+                            p.card-text
+                                | デビュー10周年記念サプライズは無事に成功しました。
+                                br
+                                | 当日の写真と合わせて、簡単に結果を報告させていただきます！
+                                //- br
+                                //- | （フライヤーは、横浜と大阪の各公演バージョンがあります）
+                            .row.text-center
+                                .col
+                                    p.text-xs-center
+                                        a(href='../img/surprise01.jpg', target='_blank')
+                                            img.mb-1(src="../img/surprise01_s.jpg")
+                                        br
+                                        | 初音さんにプレゼントした10周年記念の横断幕。
+                                        br
+                                        | ファン一同からのお祝いのメッセージを書き込んで、
+                                        br
+                                        | アンコールのタイミングでステージに向かって掲げました。
+                            .row
+                                .col-md-6
+                                    p.text-center
+                                        a(href='../img/surprise02.jpg', target='_blank')
+                                            img.mb-1(src="../img/surprise02_s.jpg")
+                                        br
+                                        | 初音さんにプレゼントしたフラワースタンド。
+                                        br
+                                        | 開演前に会場の入口に飾ってもらいました。
+                                .col-md-6
+                                    p.text-center
+                                        a(href='../img/surprise03.jpg', target='_blank')
+                                            img.mb-1(src="../img/surprise03_s.jpg")
+                                        br
+                                        | 初音さんにプレゼントしたお祝いの花束。
+                                        br
+                                        | サプライズのタイミングで、
+                                        br
+                                        | ステージ上の初音さんに手渡ししました。
+
+
+            .row.mb-3
+                .offset-md-1.col-md-10.offset-lg-2.col-lg-8
+                    .card
+                        .sub__title
+                                h2
+                                    | 当日のサークル活動について
+                                    //- span.tag.tag-primary.sub__label New
+                        .card-block
+                            p.card-text
+                                | 9月10日のライブ前に「サークル活動」を行い、サプライズ企画の準備を行います。
+                                br
+                                | サプライズ企画への参加・不参加に関わらず、一人でも多くの方にご協力をお願いしたいと思っています。
+                                br
+                                | ライブ当日は会場の入口付近で順次お声がけさせていただく予定なので、何卒よろしくお願い致します。
+
+                            dl
+                              dt 集合時間
+                              dd
+                                | 14:00〜15:00ぐらいまで
+                              dt 集合場所
+                              dd
+                                | 渋谷区宇田川町36-2 ノア渋谷会議室『ジョブズ』511号室
+                                br
+                                | （当日のライブ会場「渋谷Star lounge」のすぐ近く、東急ハンズの向かいの建物です）
+                              dt 準備の内容
+                              dd
+                                span.text-danger
+                                  | 初音さんにプレゼントする横断幕にお祝いのメッセージを書いてもらいます。
+                                br
+                                | 一度に会議室に入れる人数に制限があるため、入れ替わりでのご対応をお願いいたします。
+
+                            p.card-text
+                                | 時間は14時から開場になる15分前くらいであれば何時でもOKです。
+                                br
+                                | 直接サークル会場に来ていただいても結構ですし、場所が分からなければ「Star lounge」前に案内の人が居ますので、そちらに行ってもらっても大丈夫です。
+
+                            p.card-text.sub__text2
+                                | ※当日のサークル活動について不明点やご質問がある場合は、
+                                a(href="https://twitter.com/yoshiki_mu", target='_blank') @yoshiki_mu
+                                | までご連絡ください。
 
             .row.mb-3
                 .offset-md-1.col-md-10.offset-lg-2.col-lg-8
@@ -211,32 +199,28 @@ block contents_block
                                     //- span.tag.tag-primary.sub__label New
                         .card-block
                             p.card-text
-                                | 10周年記念ツアーでのサプライズとプレゼントは、以下の内容を予定しています。
+                                | 10周年記念ライブでのサプライズとプレゼントは、以下の内容を予定しています。
                             ul.news__list
                                 li
-                                    span.news__title 10月8日（日）【東京】ワンマンライブ初音茶屋vol.51
+                                    span.news__title 横断幕
                                     br
-                                    | ライブに参加する方のチェキを撮影してそのチェキにメッセージを書いていただき、サプライズの時にスタッフさんを通し渡してもらおうと思っています。
+                                    | 初音さんデビュー10周年を記念した横断幕を作成し、公演中のサプライズのタイミングで会場の後方からステージへ向けて掲げる予定です。
                                     br
-                                    | そしてサプライズのタイミングでデビュー10周年の意味を込めて10色のペンライトを光らせて初音さんの誕生日をお祝いしましょう。
+                                    | 横断幕には、ファンみんなからのお祝いのメッセージを寄せ書きしてもらい、終演後に初音さんにプレゼントする計画です。
                                     br
-                                    | その時に一緒に花束を渡す予定です。
-                                    br
-                                    | 詳細、サプライズのタイミング等は決まりましたら順次更新致します。
-                                    br
-                                    br
-                                    | また、東京以降のサプライズの内容は後日発表させていただきます。
+                                    | ※当日は開演前にメッセージを書き込んでもらう時間を設けるつもりなので、皆さまご協力お願いいたします。
                                 li
-                                    span.news__title 10月22日（日）【札幌】初音のヒトリラツアー’17～札幌編～
+                                    span.news__title 花束
+                                    br
+                                    | 初音さんへのプレゼントとして横断幕と同じサプライズのタイミングにお渡しする予定です。
                                 li
-                                    span.news__title 11月5日（日）【福岡】初音のヒトリラツアー’17～福岡編～
-                                li
-                                    span.news__title 11月26日（日）【名古屋】ワンマンライブ初音茶屋vol.52
-                                li
-                                    span.news__title 12月10日（日）【大阪FINAL】ワンマンライブ初音茶屋vol.53
-                            p.card-text
-                                | 大阪FINAL終了後、この企画に参加してくださった方のお名前を入れたカードを作成して後日、初音さんにお渡しする予定です。
-
+                                    span.news__title フラワースタンド
+                                    br
+                                    | 初音さんへのプレゼントとして開場前に手配し、入口に飾ってもらう予定です。
+                            p.card-text.text-danger
+                                | ※この企画は事前にスタッフさんの許可を得て実行しています。
+                                br
+                                | ※サプライズ内容は初音さんに知られないよう、ライブ終演後までSNS等での投稿は控えていただくようお願いいたします。
             //- .row
             //-     .offset-md-1.col-md-10.offset-lg-2.col-lg-8
             //-         .card.news
@@ -449,9 +433,9 @@ block contents_block
                                 .media-body
                                     | 1990年10月11日生まれ、大阪出身のシンガーソングライター。（愛称：は〜ちゃん）
                                     br
-                                    | 2007年9月5日「恋、花火」でデビューし、ドラマの主題歌なども多数手がける。
+                                    | 2007年「恋、花火」でデビューし、ドラマの主題歌なども多数手がける。
                                     br
-                                    | 今年はデビュー10周年イヤーへと突入し、10月以降は初のワンマンライブ「初音茶屋」東名阪での開催や、札幌・福岡へのツアーも決定している。
+                                    | 9/5にはデビュー10周年を迎え、「10th Anniversary Live 2017」の他、初のワンマンライブ「初音茶屋」東名阪での開催や、札幌・福岡へのツアーも決定している。
                             p.text-xs-right.m-t.m-b-0
                                 a.card-link(href='http://www.hatsune-gmjp.com/', target='_blank') オフィシャルサイトはこちら
                             .embed-responsive.embed-responsive-16by9
@@ -501,13 +485,11 @@ block contents_block
                                     //- span.tag.tag-primary.sub__label New
                         .card-block
                             p.card-text
-                                | 10周年ツアーライブには参加できないけど、初音さんの誕生日＆デビュー10周年をお祝いしたい！
+                                | 9/10のワンマンライブには参加できないけど、初音さんのデビュー10周年をお祝いしたい！
                                 br
                                 | そんな方は、ぜひお祝いのメッセージをツイートしませんか？
                                 br
                                 | もちろん、当日のライブに参加する方からのメッセージも大歓迎です♪
-                            p.btn__tweet
-                                a.btn(href='https://twitter.com/intent/tweet?hashtags=初音生誕祭', target='_blank') #初音生誕祭 のハッシュタグをつけてツイート
                             p.btn__tweet
                                 a.btn(href='https://twitter.com/intent/tweet?hashtags=初音10th', target='_blank') #初音10th のハッシュタグをつけてツイート
             //- .row
