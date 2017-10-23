@@ -189,6 +189,11 @@ a:active {
   }
 }
 
+.sub__title2 {
+  font-size: 1.25rem;
+  color: #ff9900;
+}
+
 .sub__text2 {
   font-size: 0.75rem;
 }
