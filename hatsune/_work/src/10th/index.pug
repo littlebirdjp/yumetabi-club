@@ -67,6 +67,11 @@ block contents_block
                           | 次はいよいよ大阪FINAL！！
                           br
                           | 「ワンマンライブ初音茶屋vol.53」で引き続き参加者を募集中です。
+                      p.text-center
+                          a(href='#surprise')
+                              | 大変お待たせしました！
+                              br.hidden-sm-up
+                              | 大阪公演のサプライズ詳細を公開しました。
                       p.main__text
                           | 10月8日（日）の「ワンマンライブ初音茶屋vol.51」を皮切りに、初音さんの10thAnniversaryツアーが開催されます。
                           br
@@ -124,10 +129,78 @@ block contents_block
             .row.mb-3
                 .offset-md-1.col-md-10.offset-lg-2.col-lg-8
                     .card
+                        .sub__title#surprise
+                                h2
+                                    | サプライズ＆プレゼントの詳細
+                                    span.badge.badge-primary.sub__label Up
+                                    //- span.tag.tag-primary.sub__label New
+                        .card-block
+                            p.card-text
+                                | 10周年記念ツアーでのサプライズとプレゼントは、以下の内容を予定しています。
+                            ul.news__list
+                                li
+                                    span.news__title 10月8日（日）【東京】ワンマンライブ初音茶屋vol.51
+                                    br
+                                    | ライブに参加する方のチェキを撮影してそのチェキにメッセージを書いていただき、サプライズの時にスタッフさんを通し渡してもらおうと思っています。
+                                    br
+                                    | そしてサプライズのタイミングでデビュー10周年の意味を込めて10色のペンライトを光らせて初音さんの誕生日をお祝いしましょう。その時に一緒に花束を渡す予定です。
+                                    br
+                                    | また、フラワースタンドを贈り、会場の入口に飾ってもらうつもりです。
+                                    br
+                                    br
+                                li
+                                    span.news__title 10月22日（日）【札幌】初音のヒトリラツアー’17～札幌編～
+                                li
+                                    span.news__title 11月5日（日）【福岡】初音のヒトリラツアー’17～福岡編～
+                                li
+                                    span.news__title 11月26日（日）【名古屋】ワンマンライブ初音茶屋vol.52
+                                    br
+                                    | 札幌・福岡・名古屋公演では、メッセージチェキのみのプレゼントを予定しています。
+                                    br
+                                    br
+                                li
+                                    span.news__title 12月10日（日）【大阪FINAL】ワンマンライブ初音茶屋vol.53
+                                    br
+                                    | 大阪公演では、メッセージチェキと花束、フラワースタンドのプレゼントに加えて、「クリスマスカード」が上演されるタイミングで、会場のみんなでペンライトを使って光のイルミネーションを作る予定です。
+                                    br
+                            p.card-text
+                                | 大阪FINAL終了後、この企画に参加してくださった方のお名前を入れたカードを作成して後日、初音さんにお渡しする予定です。
+
+            .row.mb-3
+                .offset-md-1.col-md-10.offset-lg-2.col-lg-8
+                    .card
+                        .sub__title
+                                h2
+                                    | 当日のサークル活動について
+                                    span.badge.badge-primary.sub__label New
+                        .card-block
+                            p.card-text
+                                | 12月10日のライブ前に「サークル活動」を行い、サプライズ企画の準備を行います。
+                                br
+                                | こちらもご都合のつく方は、ぜひご参加・ご協力のほどよろしくお願いします。
+
+                            dl
+                              dt 集合時間
+                              dd
+                                | 13:30
+                              dt 集合場所
+                              dd
+                                | 「阿倍野ROCK TOWN」会場前（あべのキューズモール 4F）
+                                br
+                                | ※会場横のフリースペースでサークル活動を行います。集合時間に間に合わない方は、途中参加も大歓迎です。
+
+                            p.card-text.sub__text2
+                                | ※当日のサークル活動について不明点やご質問がある場合は、
+                                a(href="https://twitter.com/yoshiki_mu", target='_blank') @yoshiki_mu
+                                | までご連絡ください。
+
+            .row.mb-3
+                .offset-md-1.col-md-10.offset-lg-2.col-lg-8
+                    .card
                         .sub__title
                                 h2
                                     | サプライズ企画の結果報告
-                                    span.badge.badge-primary.sub__label Up
+                                    //- span.badge.badge-primary.sub__label Up
                         .card-block
                             p.card-text
                                 | 10月8日（日）東京公演、10月22日（日）札幌公演、11月5日（日）福岡公演、11月26日（日）名古屋公演でのサプライズは無事に成功しました。
@@ -206,84 +279,6 @@ block contents_block
                                         | ファン一人一人の顔をチェキで撮影し、
                                         br
                                         | お祝いのメッセージを書き込んでアルバムに収めました。
-
-            //- .row.mb-3
-            //-     .offset-md-1.col-md-10.offset-lg-2.col-lg-8
-            //-         .card
-            //-             .sub__title
-            //-                     h2
-            //-                         | 当日のサークル活動について
-            //-                         //- span.tag.tag-primary.sub__label New
-            //-             .card-block
-            //-                 p.card-text
-            //-                     | 9月10日のライブ前に「サークル活動」を行い、サプライズ企画の準備を行います。
-            //-                     br
-            //-                     | サプライズ企画への参加・不参加に関わらず、一人でも多くの方にご協力をお願いしたいと思っています。
-            //-                     br
-            //-                     | ライブ当日は会場の入口付近で順次お声がけさせていただく予定なので、何卒よろしくお願い致します。
-            //-
-            //-                 dl
-            //-                   dt 集合時間
-            //-                   dd
-            //-                     | 14:00〜15:00ぐらいまで
-            //-                   dt 集合場所
-            //-                   dd
-            //-                     | 渋谷区宇田川町36-2 ノア渋谷会議室『ジョブズ』511号室
-            //-                     br
-            //-                     | （当日のライブ会場「渋谷Star lounge」のすぐ近く、東急ハンズの向かいの建物です）
-            //-                   dt 準備の内容
-            //-                   dd
-            //-                     span.text-danger
-            //-                       | 初音さんにプレゼントする横断幕にお祝いのメッセージを書いてもらいます。
-            //-                     br
-            //-                     | 一度に会議室に入れる人数に制限があるため、入れ替わりでのご対応をお願いいたします。
-            //-
-            //-                 p.card-text
-            //-                     | 時間は14時から開場になる15分前くらいであれば何時でもOKです。
-            //-                     br
-            //-                     | 直接サークル会場に来ていただいても結構ですし、場所が分からなければ「Star lounge」前に案内の人が居ますので、そちらに行ってもらっても大丈夫です。
-            //-
-            //-                 p.card-text.sub__text2
-            //-                     | ※当日のサークル活動について不明点やご質問がある場合は、
-            //-                     a(href="https://twitter.com/yoshiki_mu", target='_blank') @yoshiki_mu
-            //-                     | までご連絡ください。
-
-            .row.mb-3
-                .offset-md-1.col-md-10.offset-lg-2.col-lg-8
-                    .card
-                        .sub__title
-                                h2
-                                    | サプライズ＆プレゼントの詳細
-                                    //- span.tag.tag-primary.sub__label New
-                        .card-block
-                            p.card-text
-                                | 10周年記念ツアーでのサプライズとプレゼントは、以下の内容を予定しています。
-                            ul.news__list
-                                li
-                                    span.news__title 10月8日（日）【東京】ワンマンライブ初音茶屋vol.51
-                                    br
-                                    | ライブに参加する方のチェキを撮影してそのチェキにメッセージを書いていただき、サプライズの時にスタッフさんを通し渡してもらおうと思っています。
-                                    br
-                                    | そしてサプライズのタイミングでデビュー10周年の意味を込めて10色のペンライトを光らせて初音さんの誕生日をお祝いしましょう。その時に一緒に花束を渡す予定です。
-                                    br
-                                    | また、フラワースタンドを贈り、会場の入口に飾ってもらうつもりです。
-                                    br
-                                    br
-                                li
-                                    span.news__title 10月22日（日）【札幌】初音のヒトリラツアー’17～札幌編～
-                                li
-                                    span.news__title 11月5日（日）【福岡】初音のヒトリラツアー’17～福岡編～
-                                li
-                                    span.news__title 11月26日（日）【名古屋】ワンマンライブ初音茶屋vol.52
-                                    br
-                                    | 札幌・福岡・名古屋公演では、メッセージチェキのみのプレゼントを予定しています。
-                                    br
-                                    br
-                                    | 大阪公演のサプライズ内容については後日発表させていただきます。
-                                li
-                                    span.news__title 12月10日（日）【大阪FINAL】ワンマンライブ初音茶屋vol.53
-                            p.card-text
-                                | 大阪FINAL終了後、この企画に参加してくださった方のお名前を入れたカードを作成して後日、初音さんにお渡しする予定です。
 
             //- .row
             //-     .offset-md-1.col-md-10.offset-lg-2.col-lg-8
