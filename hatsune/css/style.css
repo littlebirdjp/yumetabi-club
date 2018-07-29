@@ -140,6 +140,7 @@ body {
   font-size: 1.2rem;
   line-height: 1.6;
   -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
   background: rgb(237, 120, 144);

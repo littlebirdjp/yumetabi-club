@@ -8,6 +8,7 @@ body {
   font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   line-height: 1.6;
   -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
   font-size: 0.875rem;
@@ -37,7 +38,8 @@ a:active {
 }
 
 .main {
-  background-image: linear-gradient(-180deg, rgba(237,255,41,0.65) 0%, rgba(255,225,113,0.01) 20%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(237, 255, 41, .65)), color-stop(20%, rgba(255, 225, 113, .01)));
+  background-image: linear-gradient(-180deg, rgba(237, 255, 41, .65) 0%, rgba(255, 225, 113, .01) 20%);
   background-repeat: repeat-x;
 }
 
@@ -70,16 +72,16 @@ a:active {
   text-align: center;
 }
 
-.main__title2 span {
-  font-size: 1.0rem;
-  color: #666;
-}
-
 @media (max-width: 34em) {
   .main__title2 {
     font-size: 1.125rem;
     margin-top: 20px;
   }
+}
+
+.main__title2 span {
+  font-size: 1.0rem;
+  color: #666;
 }
 
 @media (max-width: 34em) {
@@ -123,20 +125,18 @@ a:active {
   margin: 20px auto 40px;
 }
 
+.socialButton > iframe {
+  vertical-align: bottom;
+}
+
 .socialButton .fb_iframe_widget {
   vertical-align: baseline;
   display: inline;
 }
 
-.socialButton > iframe {
-  vertical-align: bottom;
-}
-
 .socialButton__line {
   display: inline;
 }
-
-
 
 @media (max-width: 34em) {
   .socialButton__line img {
@@ -144,16 +144,14 @@ a:active {
   }
 }
 
-
-
 .sub__title {
-  background-image: url(../img/title_bg@2x.png);
+  background-image : url(../img/title_bg@2x.png);
   background-size: 4px 43px;
   background-repeat: repeat-x;
 }
 
 .sub__title h2 {
-  background-image: url(../img/fox2@2x.png);
+  background-image : url(../img/fox2@2x.png);
   background-size: 31px 29px;
   background-position: 10px 5px;
   background-repeat: no-repeat;
@@ -179,19 +177,13 @@ a:active {
   margin-left: .25rem;
 }
 
-
-
 .tweet__inner {
   overflow: hidden;
 }
 
-
-
 .account__name {
   font-size: 1.0rem;
 }
-
-
 
 .news__list {
   padding-left: 1rem;
@@ -204,8 +196,6 @@ a:active {
 .news__title {
   color: #FF6E00;
 }
-
-
 
 .btn__entry {
   text-align: center;

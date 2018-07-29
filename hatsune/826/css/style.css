@@ -1,0 +1,292 @@
+@charset "utf-8";
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  font-size: 0.875rem;
+  background-color: #000;
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 0.75rem;
+  }
+}
+
+body::before {
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: -1;
+}
+
+@media (max-width: 576px) {
+  body::before {
+    background-position: center top;
+    background-size: contain;
+  }
+}
+
+a {
+  color: #1e88e5;
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: #1e88e5;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: rgb(21, 107, 183);
+  text-decoration: none;
+}
+
+.main__title {
+  font-family: 'Vast Shadow', cursive;
+  font-size: 5rem;
+  line-height: .8;
+  color: #ffd600;
+  text-align: center;
+  padding: 150px 0 80px;
+}
+
+@media (max-width: 576px) {
+  .main__title {
+    font-size: 3rem;
+    line-height: 1.1;
+    padding: 70px 0 30px;
+  }
+}
+
+.main__title span {
+  font-size: 2.5rem;
+}
+
+@media (max-width: 576px) {
+  .main__title span {
+    font-size: 2rem;
+  }
+}
+
+.main__title2 {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #4a148c;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .main__title2 {
+    font-size: 1.125rem;
+    margin-top: 20px;
+  }
+}
+
+.main__title2 span {
+  font-size: 1.0rem;
+  color: #666;
+}
+
+@media (max-width: 576px) {
+  .main__title2 span {
+    font-size: 0.875rem;
+  }
+}
+
+.main__title3 {
+  color: #f00;
+  font-size: 1.0rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 576px) {
+  .main__title3 {
+    font-size: 0.750rem;
+  }
+}
+
+.main__text {
+  font-size: 0.875rem;
+  margin: 35px auto;
+}
+
+@media (max-width: 576px) {
+  .main__text {
+    font-size: 0.75rem;
+  }
+}
+
+.main__text2 {
+  font-size: 0.75rem;
+  margin: 40px auto 30px;
+}
+
+.main__detail {
+  background: #fff;
+  padding: 1.5rem 2rem .5rem;
+}
+
+@media (max-width: 576px) {
+  .main__detail {
+    padding: .5rem 1rem .5rem;
+  }
+}
+
+.socialButton {
+  text-align: center;
+  margin: 20px auto 40px;
+}
+
+.socialButton > iframe {
+  vertical-align: bottom;
+}
+
+.socialButton .fb_iframe_widget {
+  vertical-align: baseline;
+  display: inline;
+}
+
+.socialButton__line {
+  display: inline;
+}
+
+@media (max-width: 576px) {
+  .socialButton__line img {
+    margin-top: 10px;
+  }
+}
+
+.sub__title {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#626262), color-stop(52%, #D6D6D6), color-stop(84%, #FFFFFF));
+  background-image: linear-gradient(0deg, #626262 0%, #D6D6D6 52%, #FFFFFF 84%);
+  background-size: 4px 43px;
+  background-repeat: repeat-x;
+  border-bottom: 3px solid #ffd600;
+}
+
+.sub__title h2 {
+  font-size: 1.063rem;
+  padding-left: .8rem;
+  margin-bottom: 0;
+  color: #f00;
+  line-height: 42px;
+}
+
+@media (max-width: 768px) {
+  .sub__title h2 {
+    font-size: .9rem;
+  }
+}
+
+.sub__title h2 .fas {
+  margin-right: 0.25rem;
+}
+
+.sub__title2 {
+  font-size: 1.25rem;
+  color: #ff9900;
+}
+
+.sub__text2 {
+  font-size: 0.75rem;
+}
+
+.sub__label {
+  vertical-align: text-bottom;
+  margin-left: .25rem;
+}
+
+.tweet__inner {
+  overflow: hidden;
+}
+
+.account__name {
+  font-size: 1.0rem;
+}
+
+.news__list {
+  padding-left: 1rem;
+}
+
+.news__list li {
+  margin-bottom: .5rem;
+}
+
+.news__title {
+  color: #FF6E00;
+}
+
+.btn__entry {
+  text-align: center;
+}
+
+.btn__entry a {
+  color: #FFF;
+  background: #d50000;
+  border: none;
+  border-radius: 0.5rem;
+  padding: .5rem 4rem;
+  font-size: 1.1rem;
+}
+
+.btn__entry a:hover,
+.btn__entry a:active {
+  background: rgb(255, 51, 51);
+}
+
+@media (min-width: 576px) {
+  .btn__entry a {
+    font-size: 1.5rem;
+    padding: .5rem 5rem;
+  }
+}
+
+.btn__tweet {
+  text-align: center;
+}
+
+.btn__tweet a {
+  color: #FFF;
+  background: #d50000;
+  border: none;
+  border-radius: .4rem;
+  padding: .4rem 2rem;
+}
+
+.btn__tweet a:hover {
+  background: rgb(255, 102, 102);
+}
+
+@media (max-width: 576px) {
+  .btn__tweet a {
+    font-size: .7rem;
+    padding: .375rem .6rem;
+  }
+}
+
+.copyright {
+  text-align: center;
+  color: #fff;
+  font-size: 0.75rem;
+}

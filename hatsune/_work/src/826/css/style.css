@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+:root {
+  font-size: 16px;
+}
+
+$screen-xs: 0;
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+$textcolor: #000;
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  line-height: 1.6;
+  text-size-adjust: 100%;
+  font-size: 0.875rem;
+  background-color: #000;
+  @media (max-width: $screen-sm) {
+    font-size: 0.75rem;
+  }
+  &::before{
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+    @media (max-width: $screen-sm) {
+      background-position: center top;
+      background-size: contain;
+    }
+  }
+}
+
+a {
+  color: #1e88e5;
+  text-decoration: none;
+  &:link,
+  &:visited {
+    color: #1e88e5;
+    text-decoration: none;
+  }
+  &:hover,
+  &:active {
+    color: color(#1e88e5 lightness(40%));
+    text-decoration: none;
+  }
+}
+
+.main {
+  &__title {
+    font-family: 'Vast Shadow', cursive;
+    font-size: 5rem;
+    line-height: .8;
+    color: #ffd600;
+    text-align: center;
+    padding: 150px 0 80px;
+    @media (max-width: $screen-sm) {
+      font-size: 3rem;
+      line-height: 1.1;
+      padding: 70px 0 30px;
+    }
+    span {
+      font-size: 2.5rem;
+      @media (max-width: $screen-sm) {
+        font-size: 2rem;
+      }
+    }
+  }
+  &__title2 {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #4a148c;
+    text-align: center;
+    @media (max-width: $screen-sm) {
+      font-size: 1.125rem;
+        margin-top: 20px;
+    }
+    span {
+      font-size: 1.0rem;
+      color: #666;
+      @media (max-width: $screen-sm) {
+        font-size: 0.875rem;
+      }
+    }
+  }
+  &__title3 {
+    color: #f00;
+    font-size: 1.0rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    @media (max-width: $screen-sm) {
+      font-size: 0.750rem;
+    }
+  }
+  &__text {
+    font-size: 0.875rem;
+    margin: 35px auto;
+    @media (max-width: $screen-sm) {
+      font-size: 0.75rem;
+    }
+  }
+  &__text2 {
+    font-size: 0.75rem;
+    margin: 40px auto 30px;
+  }
+  &__detail {
+    background: #fff;
+    padding: 1.5rem 2rem .5rem;
+    @media (max-width: $screen-sm) {
+      padding: .5rem 1rem .5rem;
+    }
+  }
+}
+
+.socialButton {
+  text-align: center;
+  margin: 20px auto 40px;
+  & > iframe {
+    vertical-align: bottom;
+  }
+  .fb_iframe_widget {
+    vertical-align: baseline;
+    display: inline;
+  }
+  &__line {
+    display: inline;
+    img {
+      @media (max-width: $screen-sm) {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.sub {
+  &__title {
+    background-image: linear-gradient(0deg, #626262 0%, #D6D6D6 52%, #FFFFFF 84%);
+    background-size: 4px 43px;
+    background-repeat: repeat-x;
+    border-bottom: 3px solid #ffd600;
+    h2 {
+      font-size: 1.063rem;
+      padding-left: .8rem;
+      margin-bottom: 0;
+      color: #f00;
+      line-height: 42px;
+      @media (max-width: $screen-md) {
+        font-size: .9rem;
+      }
+      .fas {
+        margin-right: 0.25rem;
+      }
+    }
+  }
+  &__title2 {
+    font-size: 1.25rem;
+      color: #ff9900;
+  }
+  &__text2 {
+    font-size: 0.75rem;
+  }
+  &__label {
+    vertical-align: text-bottom;
+    margin-left: .25rem;
+  }
+}
+
+.tweet {
+  &__inner {
+    overflow: hidden;
+  }
+}
+
+.account {
+  &__name {
+    font-size: 1.0rem;
+  }
+}
+
+.news {
+  &__list {
+    padding-left: 1rem;
+    li {
+      margin-bottom: .5rem;
+    }
+  }
+  &__title {
+    color: #FF6E00;
+  }
+}
+
+.btn {
+  &__entry {
+    text-align: center;
+    a {
+      color: #FFF;
+      background: #d50000;
+      border: none;
+      border-radius: 0.5rem;
+      padding: .5rem 4rem;
+      font-size: 1.1rem;
+      &:hover,
+      &:active {
+        background: color(#d50000 lightness(60%));
+      }
+      @media (min-width: $screen-sm) {
+        font-size: 1.5rem;
+        padding: .5rem 5rem;
+      }
+    }
+  }
+  &__tweet {
+    text-align: center;
+    a {
+      color: #FFF;
+      background: #d50000;
+      border: none;
+      border-radius: .4rem;
+      padding: .4rem 2rem;
+      &:hover {
+        background: color(#d50000 lightness(70%));
+      }
+      @media (max-width: $screen-sm) {
+        font-size: .7rem;
+        padding: .375rem .6rem;
+      }
+    }
+  }
+}
+
+.copyright {
+  text-align: center;
+  color: #fff;
+  font-size: 0.75rem;
+}

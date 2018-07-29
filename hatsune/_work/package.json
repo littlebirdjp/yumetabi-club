@@ -1,6 +1,6 @@
 {
   "name": "hatsune.yumetabi.club",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Project for Dreamers and their followers.",
   "author": "Yusuke Takahashi <youthkee@gmail.com>",
   "license": "MIT",
@@ -10,15 +10,15 @@
   },
   "scripts": {
     "postinstall": "",
-    "bwupdate": "bower install --force; preen; bash bin/bootstrap.sh",
+    "bwupdate": "bash bin/bootstrap.sh",
     "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "gulp": "^3.9.0"
+    "gulp": "^3.9.0",
+    "bootstrap": "^4.1.3"
   },
   "devDependencies": {
-    "bower": "^1.7.9",
     "browser-sync": "^2.8.2",
     "gulp-concat": "^2.1.0",
     "gulp-csscomb": "^3.0.8",
@@ -36,7 +36,6 @@
     "postcss-import": "^10.0.0",
     "postcss-mixins": "^6.0.1",
     "postcss-nested": "^2.1.0",
-    "postcss-simple-vars": "^4.0.0",
-    "preen": "^1.2.0"
+    "postcss-simple-vars": "^4.0.0"
   }
 }
