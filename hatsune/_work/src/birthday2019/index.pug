@@ -1,0 +1,645 @@
+extends ../_parts/_layout
+
+//------------------
+//- variable
+//------------------
+block var_block
+    - var title             = '初音ファン一同による「初音さんバースデー企画 2019」';//-meta title
+    - var description       = '初音さんのバースデーライブ「誕生日を迎えるよ直前ありがとうワンマン」「誕生日を迎えたよ地元ありがとうワンマン」をファンみんなでお祝いしよう！！';//-meta description
+    - var keywords          = '初音,奥村初音,女性シンガーソングライター,歌手,ライブ,バースデー,誕生日';//-meta keywords
+    - var og_url            = 'http://hatsune.yumetabi.club/birthday2019/';//-og url
+    - var og_type           = 'website';//-og type
+    - var og_title          = title;//-og title
+    - var og_image          = 'http://hatsune.yumetabi.club/birthday2019/img/ogimage.png';//-og image
+    - var og_description    = description;//-og description
+    - var tw_type           = 'summary_large_image';//-twitter card type
+    - var tw_site           = '@hatsune_movie';
+    - var tw_url            = og_url;
+    - var tw_title          = title;
+    - var tw_description    = description;
+    - var tw_image          = og_image;
+    - var rootPath          = '../'//-root path
+
+//------------------
+//- header meta
+//------------------
+block headMETA
+    link(href="https://fonts.googleapis.com/css?family=Original+Surfer", rel="stylesheet", type="text/css")
+
+//------------------
+//- header css
+//------------------
+block headCSS
+    link(rel="stylesheet", href= rootPath + "birthday2019/css/bootstrap.min.css")
+    link(rel="stylesheet", href= rootPath + "birthday2019/css/style.css")
+
+//------------------s
+//- header js
+//------------------
+block headJS
+    //- script(src= rootPath + "birthday2019/js/jquery.min.js")
+
+//- -----------------
+//- Contents
+//- -----------------
+block header_block
+
+block contents_block
+    .main
+        .container-fluid.main__inner
+            .row
+                .offset-md-1.col-md-10.offset-lg-2.col-lg-8
+                    h1.main__title
+                        | Hatsune 
+                        br.d-md-none
+                        | Birthday 
+                        br.d-md-none
+                        | 2019
+                    h2.main__title2
+                        span
+                            | 初音ファン一同による
+                        br
+                        | 初音さんバースデー企画 2019
+                    //- p.main__title3
+                    //-     | バースデーサプライズは無事終了しました。
+                    //-     br
+                    //-     | ご協力いただいた皆様ありがとうございました！！
+                    p.main__text
+                        | 10月11日に初音さんは誕生日を迎え、10月10日・10月13日に行われるワンマンライブが今年のバースデーライブとなります。
+                        br
+                        | それに合わせて、ファン一同からプレゼントとバースデーサプライズの企画でお祝いしませんか？
+                        br
+                        br
+                        | 10月10日「誕生日を迎えるよ直前ありがとうワンマン」下北沢 風知空知
+                        br
+                        | 10月13日「誕生日を迎えたよ地元ありがとうワンマン」大阪 cafe Room
+                        br
+                        br
+                        | ※上記の各公演でプレゼント代のカンパと当日の参加を募集しています。
+                        br
+                        br
+                        | この企画に賛同し、ご協力いただける方は、ぜひ下記リンクから申し込みページヘ進み、参加登録をお願いします。
+                    p.btn__entry
+                        a.btn(href='https://twipla.jp/events/406941') 参加＆詳細ページヘ
+                    p.main__text2
+                        | ※参加登録にはTwitterのアカウントが必要になります。
+                        br
+                        | Twitterアカウントをお持ちでない方は、
+                        a(href='mailto:yumetabi.club@gmail.com')
+                            | yumetabi.club@gmail.com
+                        | まで、メールにてご連絡ください。
+                        br
+                        | ※この企画は事前にスタッフさんの許可を得て実行しています。
+                    .socialButton
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-text="#{description}" data-hashtags="初音生誕祭" data-lang="ja">ツイート</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                        <div class="fb-like" data-href="#{og_url}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                        <div class="fb-share-button" data-href="#{og_url}" data-layout="button"></div>
+                        .socialButton__line
+                            <script type="text/javascript" src="//media.line.me/js/line-button.js?v=20140411" ></script>
+                            <script type="text/javascript">new media_line_me.LineButton({"pc":false,"lang":"ja","type":"a"});</script>
+    .sub
+        .container-fluid.sub__inner
+
+
+            //- .row.mb-3
+            //-     .offset-md-1.col-md-10.offset-lg-2.col-lg-8
+            //-         .card
+            //-             .sub__title#result
+            //-                     h2
+            //-                         | サプライズ企画の結果報告
+            //-                         span.badge.badge-primary.sub__label Up
+            //-             .card-body
+            //-                 p.card-text
+            //-                     | 10月8日（日）東京公演、10月22日（日）札幌公演、11月5日（日）福岡公演、11月26日（日）名古屋公演、12月10日（日）大阪公演でのサプライズは無事に成功しました。
+            //-                     | 当日の写真と合わせて、簡単に結果を報告させていただきます！
+            //-                     //- br
+            //-                     //- | （フライヤーは、横浜と大阪の各公演バージョンがあります）
+
+            //-                 h3.card-title.sub__title2 大坂公演
+            //-                 .row
+            //-                     .col-md-6
+            //-                         p.text-center
+            //-                             a(href='img/osaka01.jpg', target='_blank')
+            //-                                 img.mb-1(src="img/osaka01_s.jpg")
+            //-                             br
+            //-                             | 初音さんにプレゼントしたフラワースタンド。
+            //-                             br
+            //-                             | 開演前に会場の入口に飾ってもらいました。
+            //-                     .col-md-6
+            //-                         p.text-center
+            //-                             a(href='img/osaka02.jpg', target='_blank')
+            //-                                 img.mb-1(src="img/osaka02_s.jpg")
+            //-                             br
+            //-                             | 初音さんにプレゼントしたお祝いの花束。
+            //-                             br
+            //-                             | サプライズのタイミングで、
+            //-                             br
+            //-                             | ステージ上の初音さんに手渡ししました。
+
+            //-                 .row
+            //-                     .col-md-6
+            //-                         p.text-center
+            //-                             a(href='img/osaka03.jpg', target='_blank')
+            //-                                 img.mb-1(src="img/osaka03_s.jpg")
+            //-                             br
+            //-                             | 初音さんにプレゼントしたチェキアルバム。
+            //-                             br
+            //-                             | ファン一人一人の顔をチェキで撮影し、
+            //-                             br
+            //-                             | お祝いのメッセージを書き込んでアルバムに収めました。
+            //-                     .col-md-6
+            //-                         p.text-center
+            //-                             a(href='img/osaka04.jpg', target='_blank')
+            //-                                 img.mb-1(src="img/osaka04_s.jpg")
+            //-                             br
+            //-                             | 当日会場で配布したフライヤー。
+            //-                             br
+            //-                             | サプライズのタイミングでペンライトを光らせ、
+            //-                             br
+            //-                             | イルミネーションの演出でお祝いしました。
+
+
+            //-                 h3.card-title.sub__title2 名古屋公演
+            //-                 .row.text-center
+            //-                     .col
+            //-                         p.text-xs-center
+            //-                             a(href='img/nagoya01.jpg', target='_blank')
+            //-                                 img.mb-1(src="img/nagoya01_s.jpg")
+            //-                             br
+            //-                             | 初音さんにプレゼントしたチェキアルバム。
+            //-                             br
+            //-                             | ファン一人一人の顔をチェキで撮影し、
+            //-                             br
+            //-                             | お祝いのメッセージを書き込んでアルバムに収めました。
+
+
+            //-                 .row
+            //-                     .col-md-6
+            //-                         h3.card-title.sub__title2 福岡公演
+            //-                         p.text-center
+            //-                             a(href='img/fukuoka01.jpg', target='_blank')
+            //-                                 img.mb-1(src="img/fukuoka01_s.jpg")
+            //-                             br
+            //-                             | 初音さんにプレゼントしたチェキアルバム。
+            //-                             br
+            //-                             | ファン一人一人の顔をチェキで撮影し、
+            //-                             br
+            //-                             | お祝いのメッセージを書き込んでアルバムに収めました。
+            //-                     .col-md-6
+            //-                         h3.card-title.sub__title2 札幌公演
+            //-                         p.text-center
+            //-                             a(href='img/sapporo01.jpg', target='_blank')
+            //-                                 img.mb-1(src="img/sapporo01_s.jpg")
+            //-                             br
+            //-                             | 初音さんにプレゼントしたチェキアルバム。
+            //-                             br
+            //-                             | ファン一人一人の顔をチェキで撮影し、
+            //-                             br
+            //-                             | お祝いのメッセージを書き込んでアルバムに収めました。
+
+
+            //-                 h3.card-title.sub__title2 東京公演
+            //-                 .row
+            //-                     .col-md-6
+            //-                         p.text-center
+            //-                             a(href='img/tokyo01.jpg', target='_blank')
+            //-                                 img.mb-1(src="img/tokyo01_s.jpg")
+            //-                             br
+            //-                             | 初音さんにプレゼントしたフラワースタンド。
+            //-                             br
+            //-                             | 開演前に会場の入口に飾ってもらいました。
+            //-                     .col-md-6
+            //-                         p.text-center
+            //-                             a(href='img/tokyo02.jpg', target='_blank')
+            //-                                 img.mb-1(src="img/tokyo02_s.jpg")
+            //-                             br
+            //-                             | 初音さんにプレゼントしたお祝いの花束。
+            //-                             br
+            //-                             | サプライズのタイミングで、
+            //-                             br
+            //-                             | ステージ上の初音さんに手渡ししました。
+
+            //-                 .row.text-center
+            //-                     .col
+            //-                         p.text-xs-center
+            //-                             a(href='img/tokyo03.jpg', target='_blank')
+            //-                                 img.mb-1(src="img/tokyo03_s.jpg")
+            //-                             br
+            //-                             | 初音さんにプレゼントしたチェキアルバム。
+            //-                             br
+            //-                             | ファン一人一人の顔をチェキで撮影し、
+            //-                             br
+            //-                             | お祝いのメッセージを書き込んでアルバムに収めました。
+
+
+            .row.mb-3
+                .offset-md-1.col-md-10.offset-lg-2.col-lg-8
+                    .card
+                        .sub__title#surprise
+                                h2
+                                    | サプライズ＆プレゼントの詳細
+                                    //- span.badge.badge-primary.sub__label Up
+                                    //- span.tag.tag-primary.sub__label New
+                        .card-body
+                            p.card-text
+                                | バースデーワンマンでのサプライズとプレゼントは、以下の内容を予定しています。
+                            ul.news__list
+                                li
+                                    | 会場にファン一同から誕生日おめでとうの花を贈る。（各会場１つ予定）
+                                li
+                                    | 会場のファンみんなで一斉にペンライトを光らせバースデーライブをお祝いする。
+                                li
+                                    | 当日ライブに参加してくれた皆さんにメッセージカードを書いてもらい初音さんにお渡しする。
+                                li
+                                    | ステージ上の初音さんに花束を贈る。
+                                li
+                                    | 会場にhappy birthday＆誕生日おめでとうのメッセージを掲げる。
+
+            //- .row.mb-3
+            //-     .offset-md-1.col-md-10.offset-lg-2.col-lg-8
+            //-         .card
+            //-             .sub__title
+            //-                     h2
+            //-                         | 当日のサークル活動について
+            //-                         span.badge.badge-primary.sub__label New
+            //-             .card-body
+            //-                 p.card-text
+            //-                     | 12月10日のライブ前に「サークル活動」を行い、サプライズ企画の準備を行います。
+            //-                     br
+            //-                     | こちらもご都合のつく方は、ぜひご参加・ご協力のほどよろしくお願いします。
+            //-
+            //-                 dl
+            //-                   dt 集合時間
+            //-                   dd
+            //-                     | 13:30
+            //-                   dt 集合場所
+            //-                   dd
+            //-                     | 「阿倍野ROCK TOWN」会場前（あべのキューズモール 4F）
+            //-                     br
+            //-                     | ※会場横のフリースペースでサークル活動を行います。集合時間に間に合わない方は、途中参加も大歓迎です。
+            //-
+            //-                 p.card-text.sub__text2
+            //-                     | ※当日のサークル活動について不明点やご質問がある場合は、
+            //-                     a(href="https://twitter.com/yoshiki_mu", target='_blank') @yoshiki_mu
+            //-                     | までご連絡ください。
+
+
+            //- .row
+            //-     .offset-md-1.col-md-10.offset-lg-2.col-lg-8
+            //-         .card.news
+            //-             .sub__title
+            //-                     h2
+            //-                         | ライブレポート
+            //-                         span.label.label-info.sub__label New
+            //-             .card-body
+            //-                 p.card-text
+            //-                     | バースデーサプライズの結果報告を含む、初音茶屋vol.44＆vol.45のライブレポートをアップしました。他にもレポートが上がっていましたら、ぜひお知らせください。
+            //-                 ul.news__list
+            //-                     li
+            //-                         a(href="http://ameblo.jp/yoshiki-mu/entry-12083230870.html", target='_blank') ＜初音ライブ（初音茶屋）＞Yokohama O-SITEライブレポ（前編）｜良樹（よしき）&#39;s room
+            //-                     li
+            //-                         a(href="http://ameblo.jp/yoshiki-mu/entry-12083231136.html", target='_blank') ＜初音ライブ（初音茶屋）＞Yokohama O-SITEライブレポ（後編）｜良樹（よしき）&#39;s room
+            //-                     li
+            //-                         a(href="http://ameblo.jp/yoshiki-mu/entry-12083633580.html", target='_blank') ＜初音ライブ（初音茶屋）＞umeda AKASOライブレポ（前編）｜良樹（よしき）&#39;s room
+            //-                     li
+            //-                         a(href="http://ameblo.jp/yoshiki-mu/entry-12083633861.html", target='_blank') ＜初音ライブ（初音茶屋）＞umeda AKASOライブレポ（後編）｜良樹（よしき）&#39;s room
+            //-                     li
+            //-                         a(href="http://littlebird.mobi/2015/10/hatsunejaya44/", target='_blank') ライブレポート：ワンマンライブ初音茶屋 vol.44 〜THE BIRTHDAY 二十五伝〜 | littlebird
+
+            //- .row
+            //-     .offset-md-1.col-md-10.offset-lg-2.col-lg-8
+            //-         .card
+            //-             .sub__title
+            //-                     h2
+            //-                         | サプライズ企画の結果報告
+            //-                         span.tag.tag-primary.sub__label New
+            //-             .card-body
+            //-                 p.card-text
+            //-                     | 今年のバースデー＆50回記念のサプライズ企画も無事に成功しました。
+            //-                     br
+            //-                     | 当日の写真と合わせて、簡単に結果を報告させていただきます！
+            //-                     //- br
+            //-                     //- | （フライヤーは、横浜と大阪の各公演バージョンがあります）
+            //-                 .row
+            //-                     .col-sm-6
+            //-                         p.text-xs-center
+            //-                             a(href='img/surprise_yokohama01.jpg', target='_blank')
+            //-                                 img(src="img/surprise_yokohama01_s.jpg")
+            //-                             br
+            //-                             | 10/10の横浜公演で初音さんにお渡しした花束。
+            //-                     .col-sm-6
+            //-                         p.text-xs-center
+            //-                             a(href='img/surprise_osaka01.jpg', target='_blank')
+            //-                                 img(src="img/surprise_osaka01_s.jpg")
+            //-                             br
+            //-                             | 10/16の大阪公演で初音さんにお渡しした花束。
+            //-                 .row
+            //-                     .col-sm-6
+            //-                         p.text-xs-center
+            //-                             a(href='img/surprise_yokohama02.jpg', target='_blank')
+            //-                                 img(src="img/surprise_yokohama02_s.jpg")
+            //-                             br
+            //-                             | 横浜公演では、みんなからのメッセージカードをこんなボックスに入れてお渡ししました。
+            //-                     .col-sm-6
+            //-                         p.text-xs-center
+            //-                             a(href='img/surprise_osaka02.jpg', target='_blank')
+            //-                                 img(src="img/surprise_osaka02_s.jpg")
+            //-                             br
+            //-                             | 大阪公演では「ツネキチ・フラッグ」をみんなで掲げてお祝いしました。
+            //-                 .row
+            //-                     .col-sm-6
+            //-                         p.text-xs-center
+            //-                             a(href='img/surprise_osaka03.jpg', target='_blank')
+            //-                                 img(src="img/surprise_osaka03_s.jpg")
+            //-                             br
+            //-                             | 大阪公演では、みんなからのメッセージカードをこんなボックスに入れてお渡ししました。
+            //-                     .col-sm-6
+            //-                         p.text-xs-center
+            //-                             a(href='img/surprise_osaka04.jpg', target='_blank')
+            //-                                 img(src="img/surprise_osaka04_s.jpg")
+            //-                             br
+            //-                             | 大阪公演では「祝50」と書かれたツネキチ・デザインのメッセージカードでみんなでお祝いの言葉を書きました。
+            //-
+            //- .row
+            //-     .offset-md-1.col-md-10.offset-lg-2.col-lg-8
+            //-         .card.news
+            //-             .sub__title
+            //-                     h2
+            //-                         | 初音茶屋・最新情報
+            //-                         //- span.tag.tag-primary.sub__label New
+            //-             .card-body
+            //-                 p.card-text
+            //-                     | ゆーりらやオフィシャルブログ等で発表された初音さんの発言から、初音茶屋vol.49＆vol.50の最新情報をまとめてみました。
+            //-                 ul.news__list
+            //-                     li
+            //-                         span.news__title チーム初音のメンバー決定
+            //-                         br
+            //-                         | 初音茶屋vol.49＆vol.50のメンバーは、ボーカル／キーボード：初音さん、ギター：馬場一人さん、バイオリン：MIZさん、パーカッション：矢吹正則さん に決定しました。
+            //-                     li
+            //-                         span.news__title 初音茶屋vol.49＆vol.50限定グッズが発表
+            //-                         br
+            //-                         a(href="http://ameblo.jp/koi-tsumugi/entry-12207714244.html", target='_blank') オフィシャルブログ
+            //-                         | でA4クリアファイル2種（各￥500）、フォトセット（5枚入り￥1000）、フォトセット 表紙&アルバム付きver.（￥1500）の販売が発表されました。
+            //-                     li
+            //-                         span.news__title 初音茶屋vol.49＆vol.50限定グッズ（続報）が発表
+            //-                         br
+            //-                         a(href="http://ameblo.jp/koi-tsumugi/entry-12208083463.html", target='_blank') オフィシャルブログ
+            //-                         | でグッドナイトレディオの販売が発表されました。また、ヒトリラツアー'16で販売されていたライブDVD「絵つむぎ」とツアーパンフレットも販売されるそうです。（横浜公演での物販は開場時間14:30からスタートの予定）
+            //-                     li
+            //-                         span.news__title バースデーライブ用の新グッズの販売
+            //-                         br
+            //-                         a(href="http://ameblo.jp/koi-tsumugi/entry-12082845492.html", target='_blank') オフィシャルブログ
+            //-                         | でバースデースペシャルセットとコンセプトチェキ、キーホルダーの販売が発表。横浜公演の物販は
+            //-                         span.text-danger 開場前14:00〜
+            //-                         | 、大阪公演の物販は
+            //-                         span.text-danger 開場時間14:30〜
+            //-                         | に決まりました。
+            //-                     li
+            //-                         span.news__title グッドナイトレディオ第2弾の販売
+            //-                         br
+            //-                         | Pop’n Rockでも販売された円盤限定ラジオ「グッドナイトレディオ」の第2弾が、今回の初音茶屋でも
+            //-                         a(href="http://ameblo.jp/koi-tsumugi/entry-12082845492.html", target='_blank') 販売されるそうです
+            //-                         | 。
+            //-                     li
+            //-                         span.news__title 初音茶屋vol.46 チケットの最速販売
+            //-                         br
+            //-                         | 初音茶屋vol.44＆vol.45の会場にて、
+            //-                         a(href="http://ameblo.jp/koi-tsumugi/entry-12079440126.html", target='_blank') 次回11月初音茶屋
+            //-                         | のチケットが先行販売されます。
+            //-                         br
+            //-                         | 横浜公演では
+            //-                         span.text-danger 開場前14:00〜
+            //-                         | 整理番号先着順で販売。大阪公演では
+            //-                         span.text-danger 終演後
+            //-                         | に販売に決まりました。
+            //-                     li
+            //-                         span.news__title 初披露の曲（新曲）あり
+            //-                         br
+            //-                         | 今回、
+            //-                         a(href="http://ameblo.jp/koi-tsumugi/entry-12082163945.html", target='_blank') 初披露の曲がある
+            //-                         | とのことで、どうやら現在制作中の新曲のようです。
+            //-                     li
+            //-                         span.news__title オフィシャルファンクラブの詳細が発表（？）
+            //-                         br
+            //-                         | 初音オフィシャルFCの開設＆登録開始が、10/11頃と言われており、もしかすると初音茶屋の会場で正式発表になるかもしれません。
+
+            //- .row
+            //-     .offset-md-1.col-md-10.offset-lg-2.col-lg-8
+            //-         .card
+            //-             .sub__title
+            //-                     h2
+            //-                         | サプライズ企画の詳細
+            //-                         //- span.tag.tag-primary.sub__label New
+            //-             .card-body
+            //-                 p.card-text
+            //-                     | 横浜公演に続いて、大阪公演のサプライズ企画のフライヤーが完成しました。
+            //-                     br
+            //-                     | 10/16の初音茶屋に参加予定のファンの方は、ぜひ事前にチェックしておきましょう！
+            //-                     //- br
+            //-                     //- | （フライヤーは、横浜と大阪の各公演バージョンがあります）
+            //-                 .row
+            //-                     .col-sm-6
+            //-                         p.text-xs-center
+            //-                             a(href='img/hatsune_birthday2016_1010.jpg', target='_blank')
+            //-                                 img(src="img/hatsune_birthday2016_1010_s.jpg")
+            //-                                 br
+            //-                                 | 10/10 横浜公演版
+            //-                     .col-sm-6
+            //-                         p.text-xs-center
+            //-                             a(href='img/hatsune_birthday2016_1016.jpg', target='_blank')
+            //-                                 img(src="img/hatsune_birthday2016_1016_s.jpg")
+            //-                                 br
+            //-                                 | 10/16 大阪公演版
+            //- .row.mb-3
+            //-     .offset-md-1.col-md-10.offset-lg-2.col-lg-8
+            //-         .card
+            //-             .sub__title
+            //-                     h2
+            //-                         | 当日のサークル活動について
+            //-                         //- span.tag.tag-primary.sub__label New
+            //-             .card-body
+            //-                 p.card-text
+            //-                     | 10月8日の東京公演では、ライブ前に「サークル活動」を行い、サプライズ企画の準備を行います。ご都合のつく方は、ぜひこちらもご参加ください。集合時間・日時は以下の通りです。
+            //-
+            //-                 dl
+            //-                   dt 集合時間
+            //-                   dd
+            //-                     | 12:30
+            //-                   dt 集合場所
+            //-                   dd
+            //-                     | JR原宿駅の表参道口改札前（歩道橋が目印）
+            //-                   dt 準備の内容
+            //-                   dd
+            //-                     | バースデーサプライズの準備、手伝い
+            //-
+            //-                 p.card-text
+            //-                     | 集合場所で合流してから「サークル活動」（サプライズの準備）を行う場所に移動します。
+            //-                     br
+            //-                     | 集合時間に間に合わない方は、途中参加も大歓迎です。
+            //-
+            //-                 p.card-text.sub__text2
+            //-                     | ※途中参加希望の方は、待ち合わせの方法等を個別にご連絡しますので、
+            //-                     a(href="https://twitter.com/yoshiki_mu", target='_blank') @yoshiki_mu
+            //-                     | までご連絡ください。
+            .row.mb-3
+                .offset-md-1.col-md-10.offset-lg-2.col-lg-8
+                    .card
+                        .sub__title
+                                h2
+                                    | 初音さんについて
+                        .card-body
+                            .media
+                                .media-left.mr-2
+                                    img.media-object(src="https://avatars.io/twitter/hatsune1011/", width="73", height="73")
+                                .media-body
+                                    | 1990年10月11日生まれ、大阪出身のシンガーソングライター。（愛称：は〜ちゃん）
+                                    br
+                                    | 2007年9月5日「恋、花火」でデビューし、ドラマの主題歌なども多数手がける。
+                                    br
+                                    | 昨年はデビュー10周年を締めくくるワンマンライブをWWWで成功させ、4thアルバム「水彩とカミナリ」をリリース。今年も新曲「あなたにもらった靴をはいて」をひっさげた全国ツアーを開催するなど、精力的に活動の幅を広げている。
+                            p.text-right.m-t.m-b-0
+                                a.card-link(href='https://www.hatsune-official.com/', target='_blank') オフィシャルサイトはこちら
+                            //- .embed-responsive.embed-responsive-16by9
+                            //-     <iframe width="560" height="315" src="https://www.youtube.com/embed/tT9ZjfTZdOM" frameborder="0" allowfullscreen></iframe>
+            .row.mb-3
+                .offset-md-1.col-md-10.offset-lg-2.col-lg-8
+                    .card
+                        .sub__title
+                                h2
+                                    | バースデーワンマンについて
+                        .card-body
+                            p.card-text
+                                | 今年のバースデーワンマンは東京（下北沢）と大阪の2会場で開催。
+                                br
+                                | いずれも初音さんの真骨頂となる弾き語りスタイルとなるため、リラックスした距離感の近い空間で、往年の曲から最新曲までたっぷり堪能できるはず。ぜひ独創的な作品世界を心ゆくまで味わってみてください。
+                            p.text-right
+                                a.card-link(href='https://www.hatsune-official.com/live', target='_blank') ライブ情報はこちら
+                            .embed-responsive.embed-responsive-16by9
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/4cPGUveVfI0" frameborder="0" allowfullscreen></iframe>
+            .row
+                .col-sm-6.offset-md-1.col-md-5.offset-lg-2.col-lg-4.mb-3
+                    .card.tweet
+                        .sub__title
+                                h2
+                                    | 初音さんのTwitterタイムライン
+                        .card-body.tweet__inner
+                            p.card-text
+                                | 初音さん最新ツイートをチェックしましょう。
+                            <a class="twitter-timeline" data-height="400" href="https://twitter.com/hatsune1011?ref_src=twsrc%5Etfw">Tweets by hatsune1011</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                .col-sm-6.col-md-5.col-lg-4.mb-3
+                    .card
+                        .sub__title
+                                h2
+                                    | 初音さんのFacebookページ
+                        .card-body
+                            p.card-text
+                                 | 公式Facebookページでも最新の情報をチェックできます。
+                            <div class="fb-page" data-href="https://www.facebook.com/%E5%88%9D%E9%9F%B3%E5%85%88%E7%94%9F-312494772121781/" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="true"></div>
+            .row.mb-3
+                .offset-md-1.col-md-10.offset-lg-2.col-lg-8
+                    .card
+                        .sub__title
+                                h2
+                                    span.hidden-xs-down 初音さんに
+                                    | お祝いのメッセージを送ろう
+                                    //- span.tag.tag-primary.sub__label New
+                        .card-body
+                            p.card-text
+                                | バースデーワンマンには参加できないけど、初音さんの誕生日をお祝いしたい！
+                                br
+                                | そんな方は、ぜひお祝いのメッセージをツイートしませんか？
+                                br
+                                | もちろん、当日のライブに参加する方からのメッセージも大歓迎です♪
+                            p.btn__tweet
+                                a.btn(href='https://twitter.com/intent/tweet?hashtags=初音生誕祭', target='_blank') #初音生誕祭 のハッシュタグをつけてツイート
+            //- .row
+            //-     .offset-md-1.col-md-10.offset-lg-2.col-lg-8
+            //-         .card
+            //-             .sub__title
+            //-                     h2
+            //-                         span.hidden-xs-down 初音さんに
+            //-                         | お祝いのメッセージを送ろう
+            //-             .card-body
+            //-                 p.card-text
+            //-                     | 10/10、10/16のワンマンライブには参加できないけど、初音さんの誕生日＆50回記念をお祝いしたい！
+            //-                     br
+            //-                     | そんな方は、ぜひお祝いのメッセージをツイートしませんか？
+            //-                     br
+            //-                     | もちろん、初音茶屋に参加する方からのメッセージも大歓迎です♪
+            //-                 p.btn__tweet
+            //-                     a.btn(href='https://twitter.com/intent/tweet?hashtags=祝・初音茶屋50回', target='_blank') #祝・初音茶屋50回 のハッシュタグをつけてツイート
+            .row.mb-3
+                .offset-md-1.col-md-10.offset-lg-2.col-lg-8
+                    .card.accounts
+                        .sub__title
+                                h2
+                                    | おすすめのTwitterアカウント
+                        .card-body.accounts__inner
+                            .row
+                                .col-sm-6
+                                    .media.account
+                                        .media-left.mr-2
+                                            a(href="https://twitter.com/hatsune1011", target='_blank')
+                                                img.media-object(src="https://avatars.io/twitter/hatsune1011/", width="48", height="48")
+                                        .media-body
+                                            a(href="https://twitter.com/hatsune1011", target='_blank')
+                                                h3.media-heading.account__name @hatsune1011
+                                            p
+                                                | 初音さんの公式アカウント。
+                                                br
+                                                | ブログの更新と合わせてチェック！
+                                .col-sm-6.mt-2
+                                    .media.account
+                                        .media-left.mr-2
+                                            a(href="https://twitter.com/hatsune_web", target='_blank')
+                                                img.media-object(src="https://avatars.io/twitter/hatsune_web/", width="48", height="48")
+                                        .media-body
+                                            a(href="https://twitter.com/hatsune_web", target='_blank')
+                                                h3.media-heading.account__name @hatsune_web
+                                            | 初音 WEBSTAFFさんの公式アカウント。
+                                            br
+                                            | ライブ情報をはじめインフォメーション関連はこちら。
+                            .row
+                                .col-sm-6.mt-2
+                                    .media.account
+                                        .media-left.mr-2
+                                            a(href="https://twitter.com/pj_live", target='_blank')
+                                                img.media-object(src="https://avatars.io/twitter/pj_live/", width="48", height="48")
+                                        .media-body
+                                            a(href="https://twitter.com/pj_live", target='_blank')
+                                                h3.media-heading.account__name @pj_live
+                                            | リブラス＆初音さん応援ちう♪
+                                            br
+                                            | 初音さんとリブライト・ラスタンドの情報をツイートしている非公式アカウント。
+                                .col-sm-6.mt-2
+                                    .media.account
+                                        .media-left.mr-2
+                                            a(href="https://twitter.com/hatsune_movie", target='_blank')
+                                                img.media-object(src="https://avatars.io/twitter/hatsune_movie/", width="48", height="48")
+                                        .media-body
+                                            a(href="https://twitter.com/hatsune_movie", target='_blank')
+                                                h3.media-heading.account__name @hatsune_movie
+                                            | 初音 動画bot。
+                                            br
+                                            | 初音さんのYoutube動画をツイートしている非公式アカウント。
+                            .row
+                                .col-sm-6.mt-2
+                                    .media.account
+                                        .media-left.mr-2
+                                            a(href="https://twitter.com/hatsune_song", target='_blank')
+                                                img.media-object(src="https://avatars.io/twitter/hatsune_song/", width="48", height="48")
+                                        .media-body
+                                            a(href="https://twitter.com/hatsune_song", target='_blank')
+                                                h3.media-heading.account__name @hatsune_song
+                                            p
+                                                | 初音 歌詞bot。
+                                                br
+                                                | 初音さんの楽曲の歌詞をツイートしている非公式アカウント。
+
+    footer.footer
+        p.copyright
+            | Powered by Hatsune Fans.
+
+
+block footer_block
