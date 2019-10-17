@@ -136,6 +136,10 @@ a {
       }
     }
   }
+  &__title2 {
+    font-size: 1.25rem;
+      color: #ff9900;
+  }
   &__text2 {
     font-size: 0.75rem;
   }
